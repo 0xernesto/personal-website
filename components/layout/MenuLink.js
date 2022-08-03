@@ -9,9 +9,9 @@ import { forwardRef } from "react";
 import { Link } from "../../routes";
 
 const MenuLink = forwardRef((props, ref) => {
-	let { href, children, ...rest } = props;
+	let { route, children, ...rest } = props;
 	return (
-		<Link href={href}>
+		<Link route={route}>
 			<a ref={ref} {...rest}>
 				{children}
 			</a>

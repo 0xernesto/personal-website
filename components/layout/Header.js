@@ -9,7 +9,7 @@ const Header = () => {
 		<header className="sticky top-0 mb-5 bg-slate-900">
 			<div className="flex items-center justify-between p-2">
 				<div className="flex items-center w-10">
-					<Link href={"/"}>
+					<Link route={"/"}>
 						<a className="flex justify-center">
 							<Image
 								className="rounded opacity-90 hover:opacity-100"
