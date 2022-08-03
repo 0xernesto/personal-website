@@ -1,6 +1,6 @@
 import { Link } from "../../routes";
 import Image from "next/image";
-import logo from "../../assets/ernestor_eth.png";
+import logo from "../../public/ernestor_eth.png";
 import DefaultMenu from "./DefaultMenu";
 import CompactMenu from "./CompactMenu";
 
