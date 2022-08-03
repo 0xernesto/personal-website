@@ -1,5 +1,6 @@
-import Head from "next/head";
 import "../styles/globals.css";
+import Head from "next/head";
+import Layout from "../components/layout/Layout";
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -36,7 +37,9 @@ function MyApp({ Component, pageProps }) {
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="theme-color" content="#ffffff" />
 			</Head>
-			<Component {...pageProps} />
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
 		</>
 	);
 }

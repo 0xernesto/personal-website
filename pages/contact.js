@@ -3,7 +3,12 @@
 // app's footer).
 
 const Contact = () => {
-	return <div>Contact</div>;
+	return (
+		<div className="flex flex-col items-center justify-start w-full h-screen">
+			<h1 className="text-3xl font-bold">Contact Page</h1>
+			<p>This is my contact page.</p>
+		</div>
+	);
 };
 
 export default Contact;
