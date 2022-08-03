@@ -4,10 +4,9 @@
 	"description": "Ernesto Ramirez Personal Website",
 	"main": "index.js",
 	"scripts": {
-		"dev": "next",
+		"dev": "node server.js",
 		"build": "next build",
-		"start": "next start",
-		"export": "next export"
+		"start": "next start"
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.6.6",

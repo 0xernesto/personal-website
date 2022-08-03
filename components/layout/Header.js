@@ -15,7 +15,6 @@ const Header = () => {
 								className="rounded opacity-90 hover:opacity-100"
 								src={logo}
 								alt="logo"
-								priority
 							/>
 						</a>
 					</Link>
