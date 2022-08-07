@@ -7,10 +7,6 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Ernesto Ramirez</title>
-				<meta
-					name="description"
-					content="Ernesto Ramirez Personal Website"
-				/>
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
@@ -34,8 +30,12 @@ function MyApp({ Component, pageProps }) {
 					href="/safari-pinned-tab.svg"
 					color="#5bbad5"
 				/>
+				<meta
+					name="description"
+					content="Ernesto Ramirez Personal Website"
+				/>
 				<meta name="msapplication-TileColor" content="#da532c" />
-				<meta name="theme-color" content="#ffffff" />
+				<meta name="theme-color" content="#0f172a" />
 			</Head>
 			<Layout>
 				<Component {...pageProps} />
