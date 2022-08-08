@@ -6,7 +6,7 @@ import { marked } from "marked";
 
 const BlogDetail = ({ frontmatter: { title, date, img }, content }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full h-screen">
+		<div className="flex flex-col items-center justify-start w-full h-full">
 			<h1>{title}</h1>
 			<div>Posted on {date}</div>
 			<img src={img} alt="img" />
