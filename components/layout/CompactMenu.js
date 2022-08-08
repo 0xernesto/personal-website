@@ -7,7 +7,7 @@ const CompactMenu = () => {
 		<Menu as="div" className="relative">
 			{({ open }) => (
 				<>
-					<Menu.Button className="flex items-center justify-center w-8 h-8 hover:text-white focus:outline-none">
+					<Menu.Button className="flex items-center justify-center w-9 h-9 hover:text-white focus:outline-none">
 						<FiMenu size="25px" />
 					</Menu.Button>
 					<Transition
