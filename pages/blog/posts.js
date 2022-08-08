@@ -1,18 +1,18 @@
 // This page will display a list of all blogs that I have written.
+import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
+import { sortByDate } from "../../utils/utilityFunctions";
 import BlogPostBox from "../../components/BlogPostBox";
 
-const BlogPosts = (props) => {
-	const blogData = props.blogData.map((post) => matter(post));
-	const listItems = blogData.map((listItem) => listItem.data);
-
+const BlogPosts = ({ blog }) => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full h-full">
 			<h1 className="text-3xl font-bold">My Blog Posts</h1>
 			<p>These are all my blog posts.</p>
 			<div className="flex flex-col items-center justify-center w-11/12">
-				{listItems.map((post, i) => (
-					<BlogPostBox key={i} post={post} />
+				{blog.map((post, index) => (
+					<BlogPostBox key={index} post={post} />
 				))}
 			</div>
 		</div>
@@ -23,24 +23,31 @@ const BlogPosts = (props) => {
 // run time on client-side. Next.js uses the data returned by this function to
 // pre-render the page.
 export const getStaticProps = async () => {
-	const fs = require("fs");
+	// 1. Get files from the content directory
+	const files = fs.readdirSync(path.join("content"));
 
-	const files = fs.readdirSync(`${process.cwd()}/content`, "utf-8");
+	// 2. Get slug and frontmatter from content
+	const blog = files.map((filename) => {
+		// Create slug
+		const slug = filename.replace(".md", "");
 
-	const blog = files.filter((fn) => fn.endsWith(".md"));
+		// Get frontmatter
+		const markdownWithMeta = fs.readFileSync(
+			path.join("content", filename),
+			"utf-8"
+		);
 
-	const blogData = blog.map((post) => {
-		const path = `${process.cwd()}/content/${post}`;
-		const rawContent = fs.readFileSync(path, {
-			encoding: "utf-8",
-		});
+		const { data: frontmatter } = matter(markdownWithMeta);
 
-		return rawContent;
+		return {
+			slug,
+			frontmatter,
+		};
 	});
 
 	return {
 		props: {
-			blogData,
+			blog: blog.sort(sortByDate),
 		},
 	};
 };

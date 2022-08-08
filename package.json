@@ -4,7 +4,7 @@
 	"description": "Ernesto Ramirez Personal Website",
 	"main": "index.js",
 	"scripts": {
-		"dev": "node server.js",
+		"dev": "next dev",
 		"build": "next build",
 		"export": "next export",
 		"start": "next start"
@@ -13,14 +13,12 @@
 		"@headlessui/react": "^1.6.6",
 		"autoprefixer": "^10.4.8",
 		"gray-matter": "^4.0.3",
+		"marked": "^4.0.18",
 		"next": "^12.2.0",
-		"next-routes": "^1.4.2",
 		"postcss": "^8.4.14",
-		"raw-loader": "^4.0.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.4.0",
-		"react-markdown": "^8.0.3",
 		"tailwindcss": "^3.1.7"
 	}
 }

@@ -6,12 +6,12 @@
  * https://headlessui.com/react/menu#integrating-with-next-js
  */
 import { forwardRef } from "react";
-import { Link } from "../../routes";
+import Link from "next/link";
 
 const MenuLink = forwardRef((props, ref) => {
-	let { route, children, ...rest } = props;
+	let { href, children, ...rest } = props;
 	return (
-		<Link route={route}>
+		<Link href={href}>
 			<a ref={ref} {...rest}>
 				{children}
 			</a>

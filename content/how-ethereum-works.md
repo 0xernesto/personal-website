@@ -6,8 +6,6 @@ img: /images/blog-image-how-ethereum-works.jpeg
 date: 07 August 2022
 ---
 
-## ![Ethereum](/images/blog-image-how-ethereum-works.jpeg)
-
 # Lorem Ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in nulla. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Amet porttitor eget dolor morbi. Nisi lacus sed viverra tellus. Nec feugiat nisl pretium fusce id velit ut tortor pretium.
