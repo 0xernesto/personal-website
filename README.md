@@ -1,5 +1,7 @@
 # My Personal Website
 
+Personal website built with Next.js and deployed to IPFS with fleek.co.
+
 ## Links:
 
 -   DNS: https://ernestoramirez.xyz/
