@@ -73,6 +73,10 @@ const Contact = () => {
 		setLoading(false);
 	};
 
+	//********** Instead of having the red "required" star by default, it may be best to only show
+	//********** the star and/or validation error message after the user blurs out of input or attempts
+	//********** to submit the form.
+
 	return (
 		<div className="flex flex-col items-center justify-start w-full h-screen">
 			<h1 className="text-3xl font-bold">Contact Page</h1>
@@ -89,13 +93,14 @@ const Contact = () => {
 					/>
 				</div>
 				<input
-					className="px-2 py-1 text-white rounded bg-slate-800"
+					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
 					type="text"
 					id="firstName"
 					name="firstName"
 					placeholder="First Name"
 					value={firstName}
 					onChange={(event) => setFirstName(event.target.value)}
+					autoComplete="off"
 					required
 				/>
 				<div className="flex items-center w-full">
@@ -106,13 +111,14 @@ const Contact = () => {
 					/>
 				</div>
 				<input
-					className="px-2 py-1 text-white rounded bg-slate-800"
+					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
 					type="text"
 					id="lastName"
 					name="lastName"
 					placeholder="Last Name"
 					value={lastName}
 					onChange={(event) => setLastName(event.target.value)}
+					autoComplete="off"
 					required
 				/>
 				<div className="flex items-center w-full">
@@ -123,12 +129,13 @@ const Contact = () => {
 					/>
 				</div>
 				<input
-					className="px-2 py-1 text-white rounded bg-slate-800"
+					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
 					type="email"
 					id="email"
 					name="email"
 					placeholder="Email"
 					onChange={(event) => validateEmail(event)}
+					autoComplete="off"
 					required
 				/>
 				<div className="flex items-center w-full">
@@ -139,13 +146,14 @@ const Contact = () => {
 					/>
 				</div>
 				<input
-					className="px-2 py-1 text-white rounded bg-slate-800"
+					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
 					type="text"
 					id="subject"
 					name="subject"
 					placeholder="Subject"
 					value={subject}
 					onChange={(event) => setSubject(event.target.value)}
+					autoComplete="off"
 					required
 				/>
 				<div className="flex items-center w-full">
@@ -156,13 +164,14 @@ const Contact = () => {
 					/>
 				</div>
 				<input
-					className="px-2 py-1 text-white rounded bg-slate-800"
+					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
 					type="text"
 					id="message"
 					name="message"
 					placeholder="Message"
 					value={message}
 					onChange={(event) => setMessage(event.target.value)}
+					autoComplete="off"
 					required
 				/>
 				{successMessage ? (
