@@ -1,5 +1,3 @@
-// This page will display a list of all projects that I have built.
-
 const AllProjects = () => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full h-screen">

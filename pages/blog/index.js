@@ -1,4 +1,3 @@
-// This page will display a list of all blogs that I have written.
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";

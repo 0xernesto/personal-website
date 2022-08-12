@@ -1,4 +1,3 @@
-// This page will display a blog post with a specific post ID.
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -6,7 +5,7 @@ import { marked } from "marked";
 
 const BlogDetail = ({ frontmatter: { title, date, img }, content }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full h-full">
+		<div className="flex flex-col items-center justify-start w-full h-screen">
 			<h1>{title}</h1>
 			<div>Posted on {date}</div>
 			<img src={img} alt="img" />

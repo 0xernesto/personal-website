@@ -45,7 +45,7 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#d3d3d3] border-y-transparent"
 										}`}
-										route={"/projects/all"}
+										route={"/projects"}
 									>
 										Projects
 									</MenuLink>
@@ -59,7 +59,7 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#d3d3d3] border-y-transparent"
 										}`}
-										route={"/blog/posts"}
+										route={"/blog"}
 									>
 										Blog
 									</MenuLink>

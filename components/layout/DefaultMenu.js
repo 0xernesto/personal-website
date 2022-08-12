@@ -8,12 +8,12 @@ const DefaultMenu = () => {
 					About
 				</a>
 			</Link>
-			<Link href={"/projects/all"}>
+			<Link href={"/projects"}>
 				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
 					Projects
 				</a>
 			</Link>
-			<Link href={"/blog/posts"}>
+			<Link href={"/blog"}>
 				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
 					Blog
 				</a>

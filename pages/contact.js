@@ -2,7 +2,7 @@
 // with social links (which should probably be included in the
 // app's footer).
 import { useState } from "react";
-import { GiSevenPointedStar } from "react-icons/gi";
+import { GoCheck } from "react-icons/go";
 import Link from "next/link";
 import validator from "validator";
 
@@ -73,98 +73,95 @@ const Contact = () => {
 		setLoading(false);
 	};
 
-	//********** Instead of having the red "required" star by default, it may be best to only show
-	//********** the star and/or validation error message after the user blurs out of input or attempts
-	//********** to submit the form.
-
 	return (
-		<div className="flex flex-col items-center justify-start w-full h-screen">
-			<h1 className="text-3xl font-bold">Contact Page</h1>
-			<p>This is my contact page.</p>
+		<div className="flex flex-col items-center justify-center w-full h-screen">
 			<form
-				className="flex flex-col items-center justify-start"
+				className="flex flex-col items-start justify-center max-w-2xl p-6 mt-5 mb-5 rounded bg-slate-700 sm:w-11/12"
 				onSubmit={onSubmit}
 			>
-				<div className="flex items-center w-full">
-					<label className="mt-2">First Name</label>
-					<GiSevenPointedStar
-						className="ml-2 text-red-600"
-						size="6px"
+				<h1 className="text-3xl font-bold">Let's talk.</h1>
+				<div className="relative flex items-center justify-end w-full mt-3">
+					{firstName ? (
+						<GoCheck
+							className="absolute mr-2 pointer-events-none"
+							color="white"
+							size="25px"
+						/>
+					) : null}
+					<input
+						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+						type="text"
+						id="firstName"
+						name="firstName"
+						placeholder="First Name"
+						value={firstName}
+						onChange={(event) => setFirstName(event.target.value)}
+						autoComplete="off"
+						required
 					/>
 				</div>
-				<input
-					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
-					type="text"
-					id="firstName"
-					name="firstName"
-					placeholder="First Name"
-					value={firstName}
-					onChange={(event) => setFirstName(event.target.value)}
-					autoComplete="off"
-					required
-				/>
-				<div className="flex items-center w-full">
-					<label className="mt-2">Last Name</label>
-					<GiSevenPointedStar
-						className="ml-2 text-red-600"
-						size="6px"
+				<div className="relative flex items-center justify-end w-full mt-3">
+					{lastName ? (
+						<GoCheck
+							className="absolute mr-2 pointer-events-none"
+							color="white"
+							size="25px"
+						/>
+					) : null}
+					<input
+						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+						type="text"
+						id="lastName"
+						name="lastName"
+						placeholder="Last Name"
+						value={lastName}
+						onChange={(event) => setLastName(event.target.value)}
+						autoComplete="off"
+						required
 					/>
 				</div>
-				<input
-					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
-					type="text"
-					id="lastName"
-					name="lastName"
-					placeholder="Last Name"
-					value={lastName}
-					onChange={(event) => setLastName(event.target.value)}
-					autoComplete="off"
-					required
-				/>
-				<div className="flex items-center w-full">
-					<label className="mt-2">Email</label>
-					<GiSevenPointedStar
-						className="ml-2 text-red-600"
-						size="6px"
+				<div className="relative flex items-center justify-end w-full mt-3">
+					{email && isEmailValid ? (
+						<GoCheck
+							className="absolute mr-2 pointer-events-none"
+							color="white"
+							size="25px"
+						/>
+					) : null}
+					<input
+						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email"
+						onChange={(event) => validateEmail(event)}
+						autoComplete="off"
+						required
 					/>
 				</div>
-				<input
-					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
-					type="email"
-					id="email"
-					name="email"
-					placeholder="Email"
-					onChange={(event) => validateEmail(event)}
-					autoComplete="off"
-					required
-				/>
-				<div className="flex items-center w-full">
-					<label className="mt-2">Subject</label>
-					<GiSevenPointedStar
-						className="ml-2 text-red-600"
-						size="6px"
+				<div className="relative flex items-center justify-end w-full mt-3">
+					{subject ? (
+						<GoCheck
+							className="absolute mr-2 pointer-events-none"
+							color="white"
+							size="25px"
+						/>
+					) : null}
+					<input
+						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+						type="text"
+						id="subject"
+						name="subject"
+						placeholder="Subject"
+						value={subject}
+						onChange={(event) => setSubject(event.target.value)}
+						autoComplete="off"
+						required
 					/>
 				</div>
-				<input
-					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
-					type="text"
-					id="subject"
-					name="subject"
-					placeholder="Subject"
-					value={subject}
-					onChange={(event) => setSubject(event.target.value)}
-					autoComplete="off"
-					required
-				/>
-				<div className="flex items-center w-full">
-					<label className="mt-2">Message</label>
-					<GiSevenPointedStar
-						className="ml-2 text-red-600"
-						size="6px"
-					/>
-				</div>
-				<input
-					className="px-2 py-1 text-white rounded outline-none bg-slate-800"
+
+				<textarea
+					className="w-full min-h-[128px] px-2 py-1 mt-3 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
 					type="text"
 					id="message"
 					name="message"
@@ -174,12 +171,20 @@ const Contact = () => {
 					autoComplete="off"
 					required
 				/>
+				{error ? (
+					<div className="flex flex-col items-center justify-start w-full mt-3">
+						<span className="font-bold text-red-400">ERROR</span>
+						<span className="text-red-400">{error}</span>
+					</div>
+				) : null}
 				{successMessage ? (
-					<div className="flex flex-col items-center justify-start">
-						<h5>Success</h5>
-						<span>{successMessage}</span>
+					<div className="flex flex-col items-center justify-start w-full mt-3">
+						<span className="text-green-400">{successMessage}</span>
+						<span className="text-green-400">
+							I will get back to you within 24 hours.
+						</span>
 						<Link href="/">
-							<button className="p-2 mt-5 rounded bg-slate-900">
+							<button className="w-full p-2 mt-3 rounded bg-slate-900 opacity-90 hover:opacity-100">
 								Go to Home Page
 							</button>
 						</Link>
@@ -187,9 +192,15 @@ const Contact = () => {
 				) : (
 					<button
 						className={
-							!isEmailValid
-								? "p-2 mt-5 rounded bg-slate-900 opacity-70 hover:cursor-not-allowed"
-								: "p-2 mt-5 rounded bg-slate-900"
+							!firstName ||
+							!lastName ||
+							!email ||
+							!isEmailValid ||
+							!subject ||
+							!message ||
+							loading
+								? "p-2 mt-6 rounded bg-slate-900 opacity-70 hover:cursor-not-allowed w-full"
+								: "p-2 mt-6 rounded bg-slate-900 w-full opacity-90 hover:opacity-100"
 						}
 						disabled={
 							!firstName ||
@@ -197,7 +208,8 @@ const Contact = () => {
 							!email ||
 							!isEmailValid ||
 							!subject ||
-							!message
+							!message ||
+							loading
 								? true
 								: false
 						}

@@ -1,5 +1,3 @@
-// This page will display tell people who I am.
-
 const About = () => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full h-screen">
