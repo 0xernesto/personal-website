@@ -5,13 +5,17 @@ import { marked } from "marked";
 
 const BlogDetail = ({ frontmatter: { title, date, img }, content }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full h-screen">
-			<h1>{title}</h1>
-			<div>Posted on {date}</div>
-			<img src={img} alt="img" />
-			<div>
-				<div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-			</div>
+		<div className="flex flex-col items-center justify-center w-full h-screen">
+			<article className="flex flex-col items-center max-w-6xl px-2 prose prose-slate">
+				<h1>{title}</h1>
+				<div>Posted on {date}</div>
+				<img src={img} alt="img" />
+				<div>
+					<div
+						dangerouslySetInnerHTML={{ __html: marked(content) }}
+					/>
+				</div>
+			</article>
 		</div>
 	);
 };

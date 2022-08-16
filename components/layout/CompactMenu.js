@@ -29,7 +29,7 @@ const CompactMenu = () => {
 										className={`px-2 py-1 border-y-2 ${
 											active
 												? "text-white border-t-transparent border-b-white`"
-												: "text-[#d3d3d3] border-y-transparent"
+												: "text-[#cbd5e1] border-y-transparent"
 										}`}
 										route={"/about"}
 									>
@@ -43,7 +43,7 @@ const CompactMenu = () => {
 										className={`px-2 py-1 border-y-2 ${
 											active
 												? "text-white border-t-transparent border-b-white`"
-												: "text-[#d3d3d3] border-y-transparent"
+												: "text-[#cbd5e1] border-y-transparent"
 										}`}
 										route={"/projects"}
 									>
@@ -57,7 +57,7 @@ const CompactMenu = () => {
 										className={`px-2 py-1 border-y-2 ${
 											active
 												? "text-white border-t-transparent border-b-white`"
-												: "text-[#d3d3d3] border-y-transparent"
+												: "text-[#cbd5e1] border-y-transparent"
 										}`}
 										route={"/blog"}
 									>
@@ -71,7 +71,7 @@ const CompactMenu = () => {
 										className={`px-2 py-1 border-y-2 ${
 											active
 												? "text-white border-t-transparent border-b-white`"
-												: "text-[#d3d3d3] border-y-transparent"
+												: "text-[#cbd5e1] border-y-transparent"
 										}`}
 										route={"/contact"}
 									>
