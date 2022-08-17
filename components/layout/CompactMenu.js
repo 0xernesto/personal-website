@@ -31,7 +31,7 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										route={"/about"}
+										href={"/about"}
 									>
 										About
 									</MenuLink>
@@ -45,7 +45,7 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										route={"/projects"}
+										href={"/projects"}
 									>
 										Projects
 									</MenuLink>
@@ -59,7 +59,7 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										route={"/blog"}
+										href={"/blog"}
 									>
 										Blog
 									</MenuLink>
@@ -73,7 +73,7 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										route={"/contact"}
+										href={"/contact"}
 									>
 										Contact
 									</MenuLink>

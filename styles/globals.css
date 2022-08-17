@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Courier New", Courier, monospace;
-	background-image: linear-gradient(135deg, #0e232e, #0e2734, #0e252e);
+	background-image: linear-gradient(#0e2734, #0e2734);
 	background-color: #0f172a;
 	color: #cbd5e1;
 }

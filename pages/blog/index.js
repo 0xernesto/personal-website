@@ -6,10 +6,9 @@ import BlogPostBox from "../../components/BlogPostBox";
 
 const BlogPosts = ({ blog }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full h-full">
-			<h1 className="text-3xl font-bold">My Blog Posts</h1>
-			<p>These are all my blog posts.</p>
-			<div className="flex flex-col items-center justify-center w-11/12">
+		<div className="flex flex-col items-center justify-start w-full min-h-screen">
+			<h1 className="mb-5 text-3xl font-bold">Blog</h1>
+			<div className="flex flex-col items-center justify-center w-11/12 h-fit">
 				{blog.map((post, index) => (
 					<BlogPostBox key={index} post={post} />
 				))}

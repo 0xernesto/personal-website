@@ -6,7 +6,7 @@ import {
 
 const Footer = () => {
 	return (
-		<div className="bottom-0 z-50 flex items-center justify-center mt-5 bg-slate-900">
+		<div className="flex items-center justify-center p-1 mt-5 bg-slate-900">
 			<a
 				className="px-5 py-3 hover:text-white"
 				href="https://github.com/RamirezErnesto"

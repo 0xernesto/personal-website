@@ -74,9 +74,10 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center w-full h-screen">
+		<div className="flex flex-col items-center justify-start w-full min-h-screen">
+			<h1 className="mb-5 text-3xl font-bold">Contact</h1>
 			<form
-				className="flex flex-col items-start justify-center max-w-2xl p-6 mt-5 mb-5 rounded bg-slate-700 sm:w-11/12"
+				className="flex flex-col items-start justify-center max-w-2xl p-6 mb-5 rounded bg-slate-700 sm:w-11/12"
 				onSubmit={onSubmit}
 			>
 				<h1 className="text-3xl font-bold">Let's talk.</h1>

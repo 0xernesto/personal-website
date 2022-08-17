@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BlogPostBox = ({ post }) => {
 	return (
-		<div className="flex flex-col items-center justify-center w-9/12 max-w-xl mb-10 rounded opacity-90 hover:opacity-100 bg-slate-800">
+		<div className="flex flex-col items-center justify-center w-full max-w-xl mb-10 rounded h-fit opacity-90 hover:opacity-100 bg-slate-900">
 			<Link href={`/blog/${post.slug}`}>
 				<a>
 					<div className="relative flex justify-center w-full">
@@ -12,9 +12,11 @@ const BlogPostBox = ({ post }) => {
 							alt={post.frontmatter.img}
 						/>
 					</div>
-					<div>{post.frontmatter.date}</div>
-					<p>{post.frontmatter.title}</p>
-					<p>{post.frontmatter.description}</p>
+					<div className="p-3">
+						<p>{post.frontmatter.date}</p>
+						<p>{post.frontmatter.title}</p>
+						<p>{post.frontmatter.description}</p>
+					</div>
 				</a>
 			</Link>
 		</div>
