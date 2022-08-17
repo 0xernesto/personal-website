@@ -73,6 +73,20 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
+										href={"/notes"}
+									>
+										Notes
+									</MenuLink>
+								)}
+							</Menu.Item>
+							<Menu.Item>
+								{({ active }) => (
+									<MenuLink
+										className={`px-2 py-1 border-y-2 ${
+											active
+												? "text-white border-t-transparent border-b-white`"
+												: "text-[#cbd5e1] border-y-transparent"
+										}`}
 										href={"/contact"}
 									>
 										Contact

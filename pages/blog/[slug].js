@@ -7,7 +7,7 @@ const BlogDetail = ({ frontmatter: { title, date, img }, content }) => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full min-h-screen">
 			<article className="flex flex-col items-center max-w-6xl px-2 prose prose-slate">
-				<h1>{title}</h1>
+				<h1 className="text-3xl font-bold">{title}</h1>
 				<div>Posted on {date}</div>
 				<img src={img} alt="img" />
 				<div dangerouslySetInnerHTML={{ __html: marked(content) }} />
@@ -17,7 +17,7 @@ const BlogDetail = ({ frontmatter: { title, date, img }, content }) => {
 };
 
 export async function getStaticPaths() {
-	const files = fs.readdirSync(path.join("content"));
+	const files = fs.readdirSync(path.join("content/blog"));
 
 	const paths = files.map((filename) => ({
 		params: {
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
 	const markdownWithMeta = fs.readFileSync(
-		path.join("content", slug + ".md"),
+		path.join("content/blog", slug + ".md"),
 		"utf-8"
 	);
 

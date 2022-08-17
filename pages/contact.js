@@ -80,7 +80,7 @@ const Contact = () => {
 				className="flex flex-col items-start justify-center max-w-2xl p-6 mb-5 rounded bg-slate-700 sm:w-11/12"
 				onSubmit={onSubmit}
 			>
-				<h1 className="text-3xl font-bold">Let's talk.</h1>
+				<h1 className="text-2xl font-bold">Let's get in touch!</h1>
 				<div className="relative flex items-center justify-end w-full mt-3">
 					{firstName ? (
 						<GoCheck

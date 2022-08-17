@@ -22,7 +22,7 @@ const BlogPosts = ({ blog }) => {
 // pre-render the page.
 export const getStaticProps = async () => {
 	// 1. Get files from the content directory
-	const files = fs.readdirSync(path.join("content"));
+	const files = fs.readdirSync(path.join("content/blog"));
 
 	// 2. Get slug and frontmatter from content
 	const blog = files.map((filename) => {
@@ -31,7 +31,7 @@ export const getStaticProps = async () => {
 
 		// Get frontmatter
 		const markdownWithMeta = fs.readFileSync(
-			path.join("content", filename),
+			path.join("content/blog", filename),
 			"utf-8"
 		);
 

@@ -8,6 +8,7 @@ module.exports = {
 			"/contact": { page: "/contact" },
 			"/blog": { page: "/blog" },
 			"/projects": { page: "/projects" },
+			"/notes": { page: "/notes" },
 		};
 	},
 };

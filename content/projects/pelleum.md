@@ -1,9 +1,9 @@
 ---
-slug: how-ethereum-works
-title: How Ethereum Works
-description: This blog is my attempt to explain how Ethereum works. I will cover the most important technical aspects of Ethereum in an effort to help more Web2 developers bridge into the Web3 world, or just help anyone understand Ethereum at a slightly deeper level.
-img: /images/blog-image-how-ethereum-works.jpeg
-date: 07 August 2022
+slug: pelleum
+title: Pelleum
+description: Application to read, write, and share investing content in the form of short posts, or full investment theses. Users can save content into a library to organize their thoughts and refer to it at a later time. The app also offers the option to link a Robinhood account, so that users can see whether or not authors own the assets they write about.
+img: /images/project-pelleum.png
+date: 17 August 2022
 ---
 
 # Lorem Ipsum
