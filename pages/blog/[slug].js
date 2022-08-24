@@ -3,13 +3,31 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
-const BlogDetail = ({ frontmatter: { title, date, img }, content }) => {
+const BlogDetail = ({
+	frontmatter: { title, date, img, imgAuthor, imgSource },
+	content,
+}) => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full min-h-screen">
 			<article className="flex flex-col items-center max-w-6xl px-2 prose prose-slate">
 				<h1 className="text-3xl font-bold">{title}</h1>
 				<div>Posted on {date}</div>
-				<img src={img} alt="img" />
+				<div className="flex flex-col items-center justify-center w-full h-full">
+					<img className="mb-0" src={img} alt="img" />
+					{imgAuthor ?? imgSource ? (
+						<p>
+							Photo by
+							{"  "}
+							<a
+								href={imgSource}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{imgAuthor}
+							</a>
+						</p>
+					) : null}
+				</div>
 				<div dangerouslySetInnerHTML={{ __html: marked(content) }} />
 			</article>
 		</div>

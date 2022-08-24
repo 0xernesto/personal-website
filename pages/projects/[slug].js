@@ -3,13 +3,42 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
-const ProjectDetail = ({ frontmatter: { title, date, img }, content }) => {
+const ProjectDetail = ({
+	frontmatter: { title, date, img, repo, client },
+	content,
+}) => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full min-h-screen">
 			<article className="flex flex-col items-center max-w-6xl px-2 prose prose-slate">
 				<h1 className="text-3xl font-bold">{title}</h1>
 				<div>Posted on {date}</div>
-				<img src={img} alt="img" />
+				<img className="mb-0" src={img} alt="img" />
+				<div className="flex flex-col items-start justify-center mb-5 w-fit">
+					{repo ? (
+						<p className="my-1">
+							GitHub Repo: {"  "}
+							<a
+								href={repo}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{repo}
+							</a>
+						</p>
+					) : null}
+					{client ? (
+						<p className="my-1">
+							Application: {"  "}
+							<a
+								href={client}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{client}
+							</a>
+						</p>
+					) : null}
+				</div>
 				<div dangerouslySetInnerHTML={{ __html: marked(content) }} />
 			</article>
 		</div>

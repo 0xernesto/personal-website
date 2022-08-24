@@ -3,6 +3,8 @@ slug: rundapp
 title: RunDapp
 description: Web3 application focused on incentivizing people to run. The platform provides both social and monetary rewards to help people commit to running, which results in a positive health impact. Users can challenge themselves or others to run by locking up money that's only retrievable upon completing a run.
 img: /images/project-rundapp.png
+repo: https://github.com/rundapp
+client: https://rundapp.quest
 date: 18 August 2022
 ---
 

@@ -1,8 +1,10 @@
 ---
 slug: pelleum
 title: Pelleum
-description: Application to read, write, and share investing content in the form of short posts, or full investment theses. Users can save content into a library to organize their thoughts and refer to it at a later time. The app also offers the option to link a Robinhood account, so that users can see whether or not authors own the assets they write about.
+description: Application to read, write, and share investing content in the form of a short post, or full investment thesis. Users can save content into a library to organize their thoughts and refer to it at a later time. The app also offers the option to link a Robinhood account, so that users can see whether or not authors own the assets they write about.
 img: /images/project-pelleum.png
+# repo: https://github.com/pelleum
+# client: https://pelleum.com
 date: 17 August 2022
 ---
 

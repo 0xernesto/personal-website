@@ -3,6 +3,8 @@ slug: how-i-learned-to-code
 title: How I learned to Code
 description: In this blog, I share how I learned to code and why I made a career change from aerospace engineering to software engineering.
 img: /images/blog-image-how-i-learned-to-code.jpeg
+imgAuthor: Luca Bravo
+imgSource: https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 date: 08 August 2022
 ---
 
