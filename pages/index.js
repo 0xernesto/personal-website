@@ -28,8 +28,8 @@ const Home = () => {
 						shAave
 					</a>
 					, an application for shorting crypto assets seamlessly, and
-					(2) a cross-chain native stablecoin (more details coming
-					soon). Click{" "}
+					(2) a cross-chain interoperability project (more details
+					coming soon). Click{" "}
 					<Link href={"/projects"}>
 						<a className="underline hover:text-white">here</a>
 					</Link>{" "}
