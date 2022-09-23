@@ -16,7 +16,7 @@ const notes = () => {
 					way I found to do this was Gitbook. I'm still working on
 					transferring my notes over to Gitbook, so bear with me.
 				</p>
-				<p className="mb-8">
+				<p className="self-start mb-8">
 					Please contact me if you find something that is inaccurate,
 					unclear, or have any suggestions for changes.
 				</p>

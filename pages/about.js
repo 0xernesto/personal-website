@@ -122,15 +122,15 @@ const About = () => {
 				<p className="mb-5">
 					In a sense, I experienced a quarter-life crisis because I
 					felt the need to reevaluate my entire life. First, I had to
-					figure out what I did not want to become. I did not want to
-					become complacent, climb the corporate ladder, chase
-					professional titles, an MBA degree, or anything that is
-					typically done for social gratification in the corporate
+					figure out what I did not want to become. I knew I did not
+					want to become complacent, climb the corporate ladder, chase
+					professional titles, get an MBA degree, or do anything that
+					is typically done for social gratification in the corporate
 					world today. I strongly considered going to graduate school
-					for computer science and possibly pursuing a career in
+					to study computer science and pursuing a career in
 					academics, but I came to the conclusion that it would be
-					best to do that later on in my life if I still have the
-					itch. What I wanted was to move fast and build stuff{" "}
+					best to do that later in my life if I still have the itch.
+					What I wanted was to move fast and build stuff{" "}
 					<span className="font-bold">NOW</span>. I wanted to start or
 					join an early-stage startup company. I wanted to leverage my
 					technical skills in a way that could positively impact large
