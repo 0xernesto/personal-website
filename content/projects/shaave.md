@@ -1,14 +1,14 @@
 ---
-slug: rundapp
-title: RunDapp
-description: Web3 application focused on incentivizing people to run. The platform provides both social and monetary rewards to help people commit to running, which results in a positive health impact. Users can challenge themselves or others to run by locking up money that's only retrievable upon completing a run.
-img: /images/project-rundapp.png
-repo: https://github.com/rundapp
-client: https://rundapp.quest
-date: 18 August 2022
+slug: shaave
+title: shAave
+description: Web3 application for shorting assets by borrowing on Aave and swapping through Uniswap within the same transaction. This means one transaction to open your short-position, and one to close it, all within one interface. Doing this manuallty through Aave and Uniswap would take five transactions to open a position, five to close, and bouncing around between two interfaces.
+img: /images/project-shaave.png
+repo: https://github.com/shaave
+client: https://shaave.finance
+date: 15 September 2022
 ---
 
-Web3 application focused on incentivizing people to run. The platform provides both social and monetary rewards to help people commit to running, which results in a positive health impact. Users can challenge themselves or others to run by locking up money that's only retrievable upon completing a run.
+Web3 application for shorting assets by borrowing on Aave and swapping through Uniswap within the same transaction. This means one transaction to open your short-position, and one to close it, all within one interface. Doing this manuallty through Aave and Uniswap would take five transactions to open a position, five to close, and bouncing around between two interfaces.
 
 <!-- ## Lorem Ipsum
 

@@ -59,9 +59,9 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										href={"/blog"}
+										href={"/notes"}
 									>
-										Blog
+										Notes
 									</MenuLink>
 								)}
 							</Menu.Item>
@@ -73,9 +73,9 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										href={"/notes"}
+										href={"/blog"}
 									>
-										Notes
+										Blog
 									</MenuLink>
 								)}
 							</Menu.Item>

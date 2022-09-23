@@ -8,15 +8,15 @@ imgSource: https://unsplash.com/@dvlden?utm_source=unsplash&utm_medium=referral&
 date: 07 August 2022
 ---
 
-# The Goal of Ethereum
+## The Goal of Ethereum
 
-# Ethereum is a Transaction-Based State Machine
+## Transaction-Based State Machine
 
-# Ethereum Accounts
+## Ethereum Accounts
 
-# Data on Ethereum
+## Data on Ethereum
 
-# Sources
+## Sources
 
 -   [https://ethereum.github.io/yellowpaper/paper.pdf](https://ethereum.github.io/yellowpaper/paper.pdf)
 -   [https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)

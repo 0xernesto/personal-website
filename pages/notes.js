@@ -20,15 +20,15 @@ const notes = () => {
 					Please contact me if you find something that is inaccurate,
 					unclear, or have any suggestions for changes.
 				</p>
-				<div className="flex items-center justify-center w-fit">
+				<div className="flex items-center justify-center w-full">
 					<a
-						className="relative flex justify-center w-full h-16 p-2 rounded-md bg-slate-900 opacity-90 hover:opacity-100"
+						className="relative flex justify-center w-full h-16 max-w-[340px] p-2 rounded-md bg-slate-900 opacity-90 hover:opacity-100"
 						href="https://docs.ernestoramirez.xyz"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<img
-							className="mr-4 rounded"
+							className="hidden xs:flex xs:mr-4 xs:rounded"
 							src="/images/logo-gitbook.png"
 							alt="logo"
 						/>

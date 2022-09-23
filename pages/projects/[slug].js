@@ -39,7 +39,10 @@ const ProjectDetail = ({
 						</p>
 					) : null}
 				</div>
-				<div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+				<div
+					className="max-w-[1035px] w-11/12"
+					dangerouslySetInnerHTML={{ __html: marked(content) }}
+				/>
 			</article>
 		</div>
 	);

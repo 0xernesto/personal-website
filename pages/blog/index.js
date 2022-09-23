@@ -8,6 +8,7 @@ const BlogPosts = ({ blog }) => {
 	return (
 		<div className="flex flex-col items-center justify-start w-full min-h-screen">
 			<h1 className="mb-5 text-3xl font-bold">Blog</h1>
+			<p>Coming Soon...</p>
 			<div className="flex flex-col items-center justify-center w-11/12 h-fit">
 				{blog.map((post, index) => (
 					<BlogPostBox key={index} post={post} />
