@@ -5,7 +5,7 @@ const notes = () => {
 		<div className="flex flex-col items-center justify-start w-full min-h-screen">
 			<h1 className="mb-5 text-3xl font-bold">Notes</h1>
 			<div className="flex flex-col items-center justify-center max-w-[1035px] w-11/12 h-fit">
-				<p className="mb-5">
+				<p className="mb-8">
 					After many years of taking notes, I realized that they
 					became very scattered. This was quite overwhelming because I
 					constantly found myself Googling things I had written down
@@ -15,10 +15,6 @@ const notes = () => {
 					accessed by anyone from anywhere. The easiest and fastest
 					way I found to do this was Gitbook. I'm still working on
 					transferring my notes over to Gitbook, so bear with me.
-				</p>
-				<p className="self-start mb-8">
-					Please contact me if you find something that is inaccurate,
-					unclear, or have any suggestions for changes.
 				</p>
 				<div className="flex items-center justify-center w-full">
 					<a

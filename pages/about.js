@@ -92,8 +92,8 @@ const About = () => {
 					</a>{" "}
 					region in Mexico. My parents decided to move to the US when
 					I was around 8 years old to provide my siblings and me the
-					opportunity for a better future. I grew up on a relatively
-					low household income in the Chicago suburbs. At a pretty
+					opportunity for a better future. I grew up in a relatively
+					low-income household in the Chicago suburbs. At a pretty
 					young age, I developed an innate drive to work hard and
 					excel in school because I observed how hard some people
 					worked just to obtain basic needs. I felt that if I became
