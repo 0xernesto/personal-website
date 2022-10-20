@@ -5,7 +5,7 @@ const Home = () => {
 		<div className="flex flex-col items-center justify-start w-full min-h-screen">
 			<div className="flex flex-col items-center justify-center max-w-[1035px] w-11/12 h-fit">
 				<h2 className="self-start mb-2 text-xl font-bold">
-					Hey, I'm Ernesto.
+					Hi, I'm Ernesto.
 				</h2>
 				<p className="self-start mb-10">
 					I spend most of my time learning and building in the Web3
@@ -19,21 +19,14 @@ const Home = () => {
 					Check out some of my work.
 				</h2>
 				<p className="self-start mb-10">
-					I'm currently spending all my time on two DeFi projects: (1){" "}
-					<a
-						className="underline hover:text-white"
-						href="http://ernestoramirez.xyz/projects/shaave/"
-						target="_blank"
-					>
-						shAave
-					</a>
-					, an application for shorting crypto assets seamlessly, and
-					(2) a cross-chain interoperability project (more details
-					coming soon). Click{" "}
+					I'm currently spending all my time working on cross-chain
+					interoperability. For the time being, I'm doing the majority
+					of my Web3 work anonymously, but feel free to check out some
+					of my previous projects {"  "}
 					<Link href={"/projects"}>
 						<a className="underline hover:text-white">here</a>
-					</Link>{" "}
-					to learn more about my projects.
+					</Link>
+					.
 				</p>
 				<h2 className="self-start mb-2 text-xl font-bold">
 					Take a look at my notes.

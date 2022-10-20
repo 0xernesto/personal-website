@@ -153,11 +153,11 @@ const About = () => {
 					, my first startup. After launching the product and
 					analyzing the market's response, my cofounder and I started
 					digging into Web3 because we wanted to explore ideas that
-					could help us align incentives between Pelleum, its writers,
-					and its readers. Long story short, we went deep down the
-					Web3 rabbit hole, shut Pelleum down, built a few Ethereum
-					dApps, started attending Web3 hackathons, and have not
-					looked back. Web3 truly lies at the intersection of my
+					could help us align incentives between Pelleum, its content
+					writers, and readers. Long story short, we went deep down
+					the Web3 rabbit hole, shut Pelleum down, built a few
+					Ethereum dApps, started attending Web3 hackathons, and have
+					not looked back. Web3 truly lies at the intersection of my
 					interests in science, math, economics, philosophy, and
 					startups. I'm constantly learning and building alongside
 					very smart people. I enjoy the work that I do and I'm
