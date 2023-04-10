@@ -37,7 +37,7 @@ const About = () => {
 					) with economic systems that are more conducive to
 					exponential progress for humanity. This is because most
 					existing countries are deeply grounded in principles that
-					were established pre-internet and their protocols are not
+					were established pre-internet, and their protocols are not
 					iterated on enough to implement new ideas and get rid of
 					what doesn't work. Additionally, many people in current
 					governments are inheritors that lack the necessary founder
@@ -91,50 +91,43 @@ const About = () => {
 						Jalisco Highlands (Altos de Jalisco)
 					</a>{" "}
 					region in Mexico. My parents decided to move to the US when
-					I was around 8 years old to provide my siblings and me the
-					opportunity for a better future. I grew up in a relatively
-					low-income household in the Chicago suburbs. At a pretty
-					young age, I developed an innate drive to work hard and
-					excel in school because I observed how hard some people
-					worked just to obtain basic needs. I felt that if I became
-					wealthy in the future, I would have more resources to help
-					people.
-				</p>
-				<p className="mb-5">
-					Growing up, I never would've guessed a career that involves
-					building things on the internet would best align with my
-					interests, values, and overall personality. I thought I
-					would become a pilot or aircraft engineer because I was
-					fascinated by all things that fly. I earned a{" "}
+					I was around 8 years old to offer my siblings and me a
+					higher-quality education. We moved to the Chicago suburbs,
+					where some family was already reasiding. From a young age, I
+					was fascinated by all things that fly, so I managed to earn
+					a{" "}
 					<a
 						className="underline hover:text-white"
 						href="https://en.wikipedia.org/wiki/Evans_Scholars_Foundation"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						full-tuition and housing scholarship
+						scholarship
 					</a>{" "}
-					to attend Purdue University, graduated in 2018 with a BS in
-					aerospace engineering, worked in the aerospace industry for
-					a few years, earned my private pilot's license, but still
-					felt that something was missing.
+					to attend Purdue University and study aerospace engineering.
+					After finishing my degree, I worked in the aerospace
+					industry for a few years and earned my private pilot's
+					license, but I still felt that something was missing.
 				</p>
 				<p className="mb-5">
-					In a sense, I experienced a quarter-life crisis because I
-					felt the need to reevaluate my entire life. First, I had to
-					figure out what I did not want to become. I knew I did not
-					want to become complacent, climb the corporate ladder, chase
-					professional titles, get an MBA degree, or do anything that
-					is typically done for social gratification in the corporate
-					world today. I strongly considered going to graduate school
-					to study computer science and pursuing a career in
-					academics, but I came to the conclusion that it would be
-					best to do that later in my life if I still have the itch.
-					What I wanted was to move fast and build stuff{" "}
+					I couldn't envision myself spending my entire life working
+					at a large aerospace company or remaining within the same
+					industry. It felt too slow and constraining. To address this
+					issue, I first figured out what I did not want to become. I
+					knew I did not want to become complacent, climb the
+					corporate ladder, chase professional titles, get an MBA
+					degree, or engage in any activities primarily driven by
+					social validation in today's corporate landscape. I
+					seriously contemplated attending graduate school to study
+					computer science, electrical engineering, or physics, and
+					pursuing a career in academia. However, I came to the
+					conclusion that it would be better to explore this path
+					later in life, should the desire persist. What I wanted was
+					to move fast and build stuff{" "}
 					<span className="font-bold">NOW</span>. I wanted to start or
 					join an early-stage startup company. I wanted to leverage my
 					technical skills in a way that could positively impact large
-					masses of people around the world. It became clear that
+					masses of people around the world. It soon became clear that
 					software engineering was the best candidate for this
 					aspiration, so I decided to spend my nights and weekends
 					learning to code and building software projects with one of
@@ -155,14 +148,14 @@ const About = () => {
 					digging into Web3 because we wanted to explore ideas that
 					could help us align incentives between Pelleum, its content
 					writers, and readers. Long story short, we went deep down
-					the Web3 rabbit hole, shut Pelleum down, built a few
-					Ethereum dApps, started attending Web3 hackathons, and have
-					not looked back. Web3 truly lies at the intersection of my
-					interests in science, math, economics, philosophy, and
-					startups. I'm constantly learning and building alongside
-					very smart people. I enjoy the work that I do and I'm
-					totally ok with allocating a very large portion of my
-					lifetime to this space.
+					the Web3 rabbit hole, shut Pelleum down, started attending
+					Web3 hackathons, and have been building in the space since.
+					Web3 truly lies at the intersection of my interests in
+					science, math, economics, philosophy, and startups. I'm
+					constantly learning and building alongside incredibly smart
+					people. I enjoy the work that I do and I'm totally ok with
+					allocating a significant portion of my lifetime to this
+					space.
 				</p>
 			</div>
 		</div>

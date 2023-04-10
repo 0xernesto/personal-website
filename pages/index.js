@@ -19,10 +19,10 @@ const Home = () => {
 					Check out some of my work.
 				</h2>
 				<p className="self-start mb-10">
-					I'm currently spending all my time working on cross-chain
-					interoperability. For the time being, I'm doing the majority
-					of my Web3 work anonymously, but feel free to check out some
-					of my previous projects {"  "}
+					I'm currently spending all my time building Web3
+					infrastructure and DeFi protocols. For the time being, I'm
+					doing the majority of my Web3 work anonymously, but feel
+					free to check out some of my previous projects {"  "}
 					<Link href={"/projects"}>
 						<a className="underline hover:text-white">here</a>
 					</Link>

@@ -9,7 +9,7 @@ const Footer = () => {
 		<div className="flex items-center justify-center p-1 mt-5 bg-slate-900">
 			<a
 				className="px-5 py-3 hover:text-white"
-				href="https://github.com/RamirezErnesto"
+				href="https://github.com/0xernesto"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
@@ -17,7 +17,7 @@ const Footer = () => {
 			</a>
 			<a
 				className="px-5 py-3 hover:text-white"
-				href="https://www.linkedin.com/in/ernesto1034/"
+				href="https://www.linkedin.com/in/ernesto1034"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
