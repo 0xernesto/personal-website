@@ -3,15 +3,24 @@ module.exports = {
 	trailingSlash: true,
 	exportPathMap: async () => {
 		return {
-			"/": { page: "/" },
-			"/bio": { page: "/bio" },
+			"/": { page: "/", query: { __nextDefaultLocale: "en-US" } },
+			"/bio": { page: "/bio", query: { __nextDefaultLocale: "en-US" } },
 			"/blog": { page: "/blog" },
-			"/projects": { page: "/projects" },
-			"/books": { page: "/books" },
-			"/contact": { page: "/contact" },
+			"/projects": {
+				page: "/projects",
+				query: { __nextDefaultLocale: "en-US" },
+			},
+			"/books": {
+				page: "/books",
+				query: { __nextDefaultLocale: "en-US" },
+			},
+			"/contact": {
+				page: "/contact",
+				query: { __nextDefaultLocale: "en-US" },
+			},
 			"/connect": {
 				page: "/connect",
-				query: { __nextDefaultLocale: "en" },
+				query: { __nextDefaultLocale: "en-US" },
 			},
 		};
 	},
