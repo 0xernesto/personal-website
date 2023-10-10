@@ -16,10 +16,10 @@ const Header = () => {
 					</a>
 				</Link>
 			</div>
-			<div className="hidden sm:flex">
+			<div className="hidden md:flex">
 				<DefaultMenu />
 			</div>
-			<div className="sm:hidden">
+			<div className="md:hidden">
 				<CompactMenu />
 			</div>
 		</div>

@@ -6,7 +6,7 @@ import ProjectBox from "../../components/ProjectBox";
 
 const AllProjects = ({ projects }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full min-h-screen">
+		<div className="flex flex-col items-center justify-start w-full flex-1">
 			<h1 className="mb-5 text-3xl font-bold">Projects</h1>
 			<div className="flex flex-col items-center justify-center w-11/12 h-fit">
 				{projects.map((project, index) => (

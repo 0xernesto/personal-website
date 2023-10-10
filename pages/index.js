@@ -1,75 +1,39 @@
-import Link from "next/link";
-
 const Home = () => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full min-h-screen">
+		<div className="flex flex-col items-center justify-start w-full flex-1">
 			<div className="flex flex-col items-center justify-center max-w-[1035px] w-11/12 h-fit">
-				<h2 className="self-start mb-2 text-xl font-bold">
-					Hi, I'm Ernesto.
-				</h2>
-				<p className="self-start mb-10">
-					I spend most of my time learning and building in the Web3
-					space. Click{" "}
-					<Link href={"/about"}>
-						<a className="underline hover:text-white">here</a>
-					</Link>{" "}
-					if you want to learn more about me.
+				<h1 className="text-3xl font-bold mb-5">Ernesto Ramirez</h1>
+				<p className="self-start mb-5">
+					Hello! I'm passionate about accelerating technological
+					advancement that can enhance global living standards, boost
+					economic prosperity and freedom, or address inefficiencies
+					in existing societal systems.
 				</p>
-				<h2 className="self-start mb-2 text-xl font-bold">
-					Check out some of my work.
-				</h2>
-				<p className="self-start mb-10">
-					I'm currently spending all my time building Web3
-					infrastructure and DeFi protocols. For the time being, I'm
-					doing the majority of my Web3 work anonymously, but feel
-					free to check out some of my previous projects {"  "}
-					<Link href={"/projects"}>
-						<a className="underline hover:text-white">here</a>
-					</Link>
-					.
+				<p className="self-start mb-5">
+					I currently work in the{" "}
+					<a
+						className="underline underline-offset-2 hover:text-white"
+						href="https://en.wikipedia.org/wiki/Decentralized_finance"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						DeFi
+					</a>{" "}
+					space. I have extensive experience architecting protocols
+					from the ground up and building across the entire tech
+					stack. Recently, I co-founded {"  "}
+					<a
+						className="underline underline-offset-2 hover:text-white"
+						href="https://chainrule.io/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Chain Rule Labs
+					</a>
+					, with a focus on addressing some of Web3's core challenges
+					to pave the way for future adoption.
 				</p>
-				<h2 className="self-start mb-2 text-xl font-bold">
-					Take a look at my notes.
-				</h2>
-				<p className="self-start mb-10">
-					I love taking notes and making them public for people with
-					similar interests. Click{" "}
-					<Link href={"/notes"}>
-						<a className="underline hover:text-white">here</a>
-					</Link>{" "}
-					to look at my notes.
-				</p>
-				<h2 className="self-start mb-2 text-xl font-bold">
-					I like to write.
-				</h2>
-				<p className="self-start mb-10">
-					I will be publishing blog posts here and other sites like
-					Medium and Substack soon.{" "}
-					<Link href={"/blog"}>
-						<a className="underline hover:text-white">
-							Stay tuned...
-						</a>
-					</Link>
-				</p>
-				<h2 className="self-start mb-2 text-xl font-bold">
-					Let's get in touch.
-				</h2>
-				<p className="self-start mb-2">
-					Please{" "}
-					<Link href={"/contact"}>
-						<a className="underline hover:text-white">contact me</a>
-					</Link>{" "}
-					if you:
-				</p>
-				<ol className="self-start mb-5 list-decimal ml-14">
-					<li>
-						Find something that is unclear, broken, or inaccurate.
-					</li>
-					<li>Know of a better way to do something.</li>
-					<li>Have comments about something I wrote.</li>
-					<li>Want to chat about a similar interest.</li>
-					<li>Want to work together.</li>
-				</ol>
+				<p className="self-start">Thanks for stopping by!</p>
 			</div>
 		</div>
 	);

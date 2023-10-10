@@ -6,7 +6,7 @@ import BlogPostBox from "../../components/BlogPostBox";
 
 const BlogPosts = ({ blog }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full min-h-screen">
+		<div className="flex flex-col items-center justify-start w-full flex-1">
 			<h1 className="mb-5 text-3xl font-bold">Blog</h1>
 			<div className="flex flex-col items-center justify-center w-11/12 h-fit">
 				{blog.map((post, index) => (

@@ -4,7 +4,7 @@ Personal website built with Next.js and deployed to IPFS with fleek.co.
 
 ## Links:
 
--   DNS: https://ernestoramirez.xyz/
+-   DNS: https://ernestor.xyz/
 -   ENS (browsers with **without ENS resolver**): https://ernestor.eth.link/
 -   ENS (browsers **with ENS resolver**): https://ernestor.eth/
 

@@ -31,9 +31,37 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										href={"/about"}
+										href={"/"}
 									>
-										About
+										Home
+									</MenuLink>
+								)}
+							</Menu.Item>
+							<Menu.Item>
+								{({ active }) => (
+									<MenuLink
+										className={`px-2 py-1 border-y-2 ${
+											active
+												? "text-white border-t-transparent border-b-white`"
+												: "text-[#cbd5e1] border-y-transparent"
+										}`}
+										href={"/bio"}
+									>
+										Bio
+									</MenuLink>
+								)}
+							</Menu.Item>
+							<Menu.Item>
+								{({ active }) => (
+									<MenuLink
+										className={`px-2 py-1 border-y-2 ${
+											active
+												? "text-white border-t-transparent border-b-white`"
+												: "text-[#cbd5e1] border-y-transparent"
+										}`}
+										href={"/blog"}
+									>
+										Blog
 									</MenuLink>
 								)}
 							</Menu.Item>
@@ -53,16 +81,18 @@ const CompactMenu = () => {
 							</Menu.Item>
 							<Menu.Item>
 								{({ active }) => (
-									<MenuLink
+									<a
 										className={`px-2 py-1 border-y-2 ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										href={"/notes"}
+										href={process.env.GITBOOK_URL}
+										target="_blank"
+										rel="noopener noreferrer"
 									>
 										Notes
-									</MenuLink>
+									</a>
 								)}
 							</Menu.Item>
 							<Menu.Item>
@@ -73,9 +103,9 @@ const CompactMenu = () => {
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
 										}`}
-										href={"/blog"}
+										href={"/books"}
 									>
-										Blog
+										Books
 									</MenuLink>
 								)}
 							</Menu.Item>

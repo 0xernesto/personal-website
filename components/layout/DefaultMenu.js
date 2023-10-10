@@ -3,9 +3,19 @@ import Link from "next/link";
 const DefaultMenu = () => {
 	return (
 		<>
-			<Link href={"/about"}>
+			<Link href={"/"}>
 				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
-					About
+					Home
+				</a>
+			</Link>
+			<Link href={"/bio"}>
+				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
+					Bio
+				</a>
+			</Link>
+			<Link href={"/blog"}>
+				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
+					Blog
 				</a>
 			</Link>
 			<Link href={"/projects"}>
@@ -13,14 +23,17 @@ const DefaultMenu = () => {
 					Projects
 				</a>
 			</Link>
-			<Link href={"/notes"}>
+			<a
+				className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white"
+				href={process.env.GITBOOK_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Notes
+			</a>
+			<Link href={"/books"}>
 				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
-					Notes
-				</a>
-			</Link>
-			<Link href={"/blog"}>
-				<a className="px-2 py-1 border-transparent border-y-2 hover:text-white hover:border-b-white">
-					Blog
+					Books
 				</a>
 			</Link>
 			<Link href={"/contact"}>

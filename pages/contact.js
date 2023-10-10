@@ -37,7 +37,7 @@ const Contact = () => {
 		setError("");
 
 		// Send email via API request
-		fetch(process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT, {
+		fetch(process.env.CONTACT_FORM_ENDPOINT, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -74,7 +74,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-start w-full min-h-screen">
+		<div className="flex flex-col items-center justify-start w-full flex-1">
 			<h1 className="mb-5 text-3xl font-bold">Contact</h1>
 			<form
 				className="flex flex-col items-start justify-center max-w-2xl p-6 mb-5 rounded bg-slate-700 sm:w-11/12"
