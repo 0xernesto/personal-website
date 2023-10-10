@@ -10,7 +10,7 @@ const Connect = ({ htmlString }) => {
 	return null;
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const pagePath = path.join(process.cwd(), "public", "connect.html");
 	const htmlString = fs.readFileSync(pagePath, "utf8");
 
