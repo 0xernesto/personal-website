@@ -62,7 +62,7 @@ const Contact = () => {
 					setMessage("");
 
 					// Success message
-					setSuccessMessage("Your message was successfully sent.");
+					setSuccessMessage("Thank you for your message!");
 				}
 			})
 			.catch((err) => {
@@ -180,9 +180,8 @@ const Contact = () => {
 				) : null}
 				{successMessage ? (
 					<div className="flex flex-col items-center justify-start w-full mt-3">
-						<span className="text-green-400">{successMessage}</span>
-						<span className="text-green-400">
-							I will get back to you within 24 hours.
+						<span className="text-green-400 my-5">
+							{successMessage}
 						</span>
 						<Link href="/">
 							<button className="w-full p-2 mt-3 rounded bg-slate-900 opacity-90 hover:opacity-100">
