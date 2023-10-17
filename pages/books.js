@@ -112,6 +112,17 @@ const Books = () => {
 					<li className="pl-4 mb-5">
 						<a
 							className="underline underline-offset-2 hover:text-white"
+							href="https://a.co/d/dFmilNZ"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							The Sovereign Individual
+						</a>{" "}
+						by James Dale Davidson and William Rees-Mogg
+					</li>
+					<li className="pl-4 mb-5">
+						<a
+							className="underline underline-offset-2 hover:text-white"
 							href="https://a.co/d/b2tdbQL"
 							target="_blank"
 							rel="noopener noreferrer"
