@@ -13,7 +13,6 @@ const ProjectBox = ({ project }) => {
 						/>
 					</div>
 					<div className="p-3">
-						{/* <p>{project.frontmatter.date}</p> */}
 						<p className="font-bold text-white">
 							{project.frontmatter.title}
 						</p>

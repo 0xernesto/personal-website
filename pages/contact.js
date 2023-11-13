@@ -1,6 +1,3 @@
-// This page will display a form for people to contact me, along
-// with social links (which should probably be included in the
-// app's footer).
 import { useState } from "react";
 import { GoCheck } from "react-icons/go";
 import Link from "next/link";
@@ -74,150 +71,158 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-start w-full flex-1">
-			<h1 className="mb-5 text-3xl font-bold">Contact</h1>
-			<form
-				className="flex flex-col items-start justify-center max-w-2xl p-6 mb-5 rounded bg-slate-700 sm:w-11/12"
-				onSubmit={onSubmit}
-			>
-				<h1 className="text-2xl font-bold">Let's get in touch!</h1>
-				<div className="relative flex items-center justify-end w-full mt-3">
-					{firstName ? (
-						<GoCheck
-							className="absolute mr-2 pointer-events-none"
-							color="white"
-							size="25px"
+		<div className="flex w-full flex-1 flex-col items-center justify-start py-10 px-4">
+			<div className="flex min-h-fit max-w-4xl w-full items-center flex-col">
+				<h1 className="text-3xl font-bold mb-6">Contact</h1>
+				<form
+					className="flex flex-col items-start justify-center max-w-2xl p-6 mb-5 rounded bg-slate-700 sm:w-11/12"
+					onSubmit={onSubmit}
+				>
+					<h1 className="text-2xl font-bold">Let's get in touch!</h1>
+					<div className="relative flex items-center justify-end w-full mt-3">
+						{firstName ? (
+							<GoCheck
+								className="absolute mr-2 pointer-events-none"
+								color="white"
+								size="25px"
+							/>
+						) : null}
+						<input
+							className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+							type="text"
+							id="firstName"
+							name="firstName"
+							placeholder="First Name"
+							value={firstName}
+							onChange={(event) =>
+								setFirstName(event.target.value)
+							}
+							autoComplete="off"
+							required
 						/>
-					) : null}
-					<input
-						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
-						type="text"
-						id="firstName"
-						name="firstName"
-						placeholder="First Name"
-						value={firstName}
-						onChange={(event) => setFirstName(event.target.value)}
-						autoComplete="off"
-						required
-					/>
-				</div>
-				<div className="relative flex items-center justify-end w-full mt-3">
-					{lastName ? (
-						<GoCheck
-							className="absolute mr-2 pointer-events-none"
-							color="white"
-							size="25px"
+					</div>
+					<div className="relative flex items-center justify-end w-full mt-3">
+						{lastName ? (
+							<GoCheck
+								className="absolute mr-2 pointer-events-none"
+								color="white"
+								size="25px"
+							/>
+						) : null}
+						<input
+							className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+							type="text"
+							id="lastName"
+							name="lastName"
+							placeholder="Last Name"
+							value={lastName}
+							onChange={(event) =>
+								setLastName(event.target.value)
+							}
+							autoComplete="off"
+							required
 						/>
-					) : null}
-					<input
-						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
-						type="text"
-						id="lastName"
-						name="lastName"
-						placeholder="Last Name"
-						value={lastName}
-						onChange={(event) => setLastName(event.target.value)}
-						autoComplete="off"
-						required
-					/>
-				</div>
-				<div className="relative flex items-center justify-end w-full mt-3">
-					{email && isEmailValid ? (
-						<GoCheck
-							className="absolute mr-2 pointer-events-none"
-							color="white"
-							size="25px"
+					</div>
+					<div className="relative flex items-center justify-end w-full mt-3">
+						{email && isEmailValid ? (
+							<GoCheck
+								className="absolute mr-2 pointer-events-none"
+								color="white"
+								size="25px"
+							/>
+						) : null}
+						<input
+							className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Email"
+							onChange={(event) => validateEmail(event)}
+							autoComplete="off"
+							required
 						/>
-					) : null}
-					<input
-						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
-						type="email"
-						id="email"
-						name="email"
-						placeholder="Email"
-						onChange={(event) => validateEmail(event)}
-						autoComplete="off"
-						required
-					/>
-				</div>
-				<div className="relative flex items-center justify-end w-full mt-3">
-					{subject ? (
-						<GoCheck
-							className="absolute mr-2 pointer-events-none"
-							color="white"
-							size="25px"
+					</div>
+					<div className="relative flex items-center justify-end w-full mt-3">
+						{subject ? (
+							<GoCheck
+								className="absolute mr-2 pointer-events-none"
+								color="white"
+								size="25px"
+							/>
+						) : null}
+						<input
+							className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+							type="text"
+							id="subject"
+							name="subject"
+							placeholder="Subject"
+							value={subject}
+							onChange={(event) => setSubject(event.target.value)}
+							autoComplete="off"
+							required
 						/>
-					) : null}
-					<input
-						className="w-full py-1 pl-2 pr-10 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
-						type="text"
-						id="subject"
-						name="subject"
-						placeholder="Subject"
-						value={subject}
-						onChange={(event) => setSubject(event.target.value)}
-						autoComplete="off"
-						required
-					/>
-				</div>
+					</div>
 
-				<textarea
-					className="w-full min-h-[128px] px-2 py-1 mt-3 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
-					type="text"
-					id="message"
-					name="message"
-					placeholder="Message"
-					value={message}
-					onChange={(event) => setMessage(event.target.value)}
-					autoComplete="off"
-					required
-				/>
-				{error ? (
-					<div className="flex flex-col items-center justify-start w-full mt-3">
-						<span className="font-bold text-red-400">ERROR</span>
-						<span className="text-red-400">{error}</span>
-					</div>
-				) : null}
-				{successMessage ? (
-					<div className="flex flex-col items-center justify-start w-full mt-3">
-						<span className="text-green-400 my-5">
-							{successMessage}
-						</span>
-						<Link href="/">
-							<button className="w-full p-2 mt-3 rounded bg-slate-900 opacity-90 hover:opacity-100">
-								Go to Home Page
-							</button>
-						</Link>
-					</div>
-				) : (
-					<button
-						className={
-							!firstName ||
-							!lastName ||
-							!email ||
-							!isEmailValid ||
-							!subject ||
-							!message ||
-							loading
-								? "p-2 mt-6 rounded bg-slate-900 opacity-70 hover:cursor-not-allowed w-full"
-								: "p-2 mt-6 rounded bg-slate-900 w-full opacity-90 hover:opacity-100"
-						}
-						disabled={
-							!firstName ||
-							!lastName ||
-							!email ||
-							!isEmailValid ||
-							!subject ||
-							!message ||
-							loading
-								? true
-								: false
-						}
-					>
-						Submit
-					</button>
-				)}
-			</form>
+					<textarea
+						className="w-full min-h-[128px] px-2 py-1 mt-3 text-white border rounded outline-none border-slate-900 focus:border-slate-300 bg-slate-900"
+						type="text"
+						id="message"
+						name="message"
+						placeholder="Message"
+						value={message}
+						onChange={(event) => setMessage(event.target.value)}
+						autoComplete="off"
+						required
+					/>
+					{error ? (
+						<div className="flex flex-col items-center justify-start w-full mt-3">
+							<span className="font-bold text-red-400">
+								ERROR
+							</span>
+							<span className="text-red-400">{error}</span>
+						</div>
+					) : null}
+					{successMessage ? (
+						<div className="flex flex-col items-center justify-start w-full mt-3">
+							<span className="text-green-400 my-5">
+								{successMessage}
+							</span>
+							<Link href="/">
+								<button className="w-full p-2 mt-3 rounded bg-slate-900 opacity-90 hover:opacity-100">
+									Go to Home Page
+								</button>
+							</Link>
+						</div>
+					) : (
+						<button
+							className={
+								!firstName ||
+								!lastName ||
+								!email ||
+								!isEmailValid ||
+								!subject ||
+								!message ||
+								loading
+									? "p-2 mt-6 rounded bg-slate-900 opacity-70 hover:cursor-not-allowed w-full"
+									: "p-2 mt-6 rounded bg-slate-900 w-full opacity-90 hover:opacity-100"
+							}
+							disabled={
+								!firstName ||
+								!lastName ||
+								!email ||
+								!isEmailValid ||
+								!subject ||
+								!message ||
+								loading
+									? true
+									: false
+							}
+						>
+							Submit
+						</button>
+					)}
+				</form>
+			</div>
 		</div>
 	);
 };

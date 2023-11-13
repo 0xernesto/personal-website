@@ -11,10 +11,20 @@ body {
 	background-color: #0f172a;
 	color: #cbd5e1;
 }
-
-a {
+a[target="_blank"] {
 	color: inherit;
-	text-decoration: none;
+	text-decoration: underline;
+	text-underline-offset: 0.25rem;
+}
+
+a[target="_blank"]:hover {
+	color: #ffffff;
+	text-decoration: underline;
+	text-underline-offset: 0.25rem;
+}
+
+.no-underline {
+	text-decoration: none !important;
 }
 
 * {

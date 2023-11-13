@@ -6,12 +6,14 @@ import ProjectBox from "../../components/ProjectBox";
 
 const AllProjects = ({ projects }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full flex-1">
-			<h1 className="mb-5 text-3xl font-bold">Projects</h1>
-			<div className="flex flex-col items-center justify-center w-11/12 h-fit">
-				{projects.map((project, index) => (
-					<ProjectBox key={index} project={project} />
-				))}
+		<div className="flex w-full flex-1 flex-col items-center justify-start py-10 px-4">
+			<div className="flex min-h-fit max-w-4xl w-full items-center flex-col">
+				<h1 className="text-3xl font-bold mb-6">Projects</h1>
+				<div className="flex flex-col items-center justify-center h-fit">
+					{projects.map((project, index) => (
+						<ProjectBox key={index} project={project} />
+					))}
+				</div>
 			</div>
 		</div>
 	);

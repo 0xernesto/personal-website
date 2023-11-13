@@ -6,12 +6,14 @@ import BlogPostBox from "../../components/BlogPostBox";
 
 const BlogPosts = ({ blog }) => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full flex-1">
-			<h1 className="mb-5 text-3xl font-bold">Blog</h1>
-			<div className="flex flex-col items-center justify-center w-11/12 h-fit">
-				{blog.map((post, index) => (
-					<BlogPostBox key={index} post={post} />
-				))}
+		<div className="flex w-full flex-1 flex-col items-center justify-start py-10 px-4">
+			<div className="flex min-h-fit max-w-4xl w-full items-center flex-col">
+				<h1 className="text-3xl font-bold mb-6">Blog</h1>
+				<div className="flex flex-col items-center justify-center h-fit">
+					{blog.map((post, index) => (
+						<BlogPostBox key={index} post={post} />
+					))}
+				</div>
 			</div>
 		</div>
 	);

@@ -4,25 +4,25 @@ import CompactMenu from "./CompactMenu";
 
 const Header = () => {
 	return (
-		<div className="sticky top-0 z-50 flex items-center justify-between p-2 mb-5 bg-slate-900">
-			<div className="flex items-center justify-center w-12">
-				<Link href="/">
-					<a className="relative flex justify-center h-10">
+		<header className="sticky z-50 top-0 flex w-full items-center justify-center bg-slate-900 px-4 py-2">
+			<div className="flex z-50 max-w-4xl w-full items-center justify-between py-2">
+				<Link className="flex items-center justify-center" href="/">
+					<div className="flex w-12 justify-center outline-none shrink-0 hover:cursor-pointer">
 						<img
-							className="rounded opacity-90 hover:opacity-100"
+							className="rounded"
 							src="/images/ernestor-eth.png"
 							alt="logo"
 						/>
-					</a>
+					</div>
 				</Link>
+				<div className="hidden md:flex">
+					<DefaultMenu />
+				</div>
+				<div className="md:hidden">
+					<CompactMenu />
+				</div>
 			</div>
-			<div className="hidden md:flex">
-				<DefaultMenu />
-			</div>
-			<div className="md:hidden">
-				<CompactMenu />
-			</div>
-		</div>
+		</header>
 	);
 };
 

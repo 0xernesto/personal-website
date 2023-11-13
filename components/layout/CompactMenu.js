@@ -20,13 +20,13 @@ const CompactMenu = () => {
 						leaveTo="opacity-0 scale 90"
 					>
 						<Menu.Items
-							className="absolute right-0 flex flex-col p-2 origin-top-right rounded shadow-xl top-4 bg-slate-900 focus:outline-none"
+							className="absolute right-0 flex flex-col p-2 origin-top-right rounded shadow-xl top-8 bg-slate-900 focus:outline-none"
 							static={true}
 						>
 							<Menu.Item>
 								{({ active }) => (
 									<MenuLink
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
@@ -40,7 +40,7 @@ const CompactMenu = () => {
 							<Menu.Item>
 								{({ active }) => (
 									<MenuLink
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
@@ -54,7 +54,7 @@ const CompactMenu = () => {
 							<Menu.Item>
 								{({ active }) => (
 									<MenuLink
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
@@ -68,7 +68,7 @@ const CompactMenu = () => {
 							<Menu.Item>
 								{({ active }) => (
 									<MenuLink
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
@@ -82,7 +82,7 @@ const CompactMenu = () => {
 							<Menu.Item>
 								{({ active }) => (
 									<a
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
@@ -98,7 +98,7 @@ const CompactMenu = () => {
 							<Menu.Item>
 								{({ active }) => (
 									<MenuLink
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"
@@ -112,7 +112,7 @@ const CompactMenu = () => {
 							<Menu.Item>
 								{({ active }) => (
 									<MenuLink
-										className={`px-2 py-1 border-y-2 ${
+										className={`px-2 py-1 border-y-2 no-underline ${
 											active
 												? "text-white border-t-transparent border-b-white`"
 												: "text-[#cbd5e1] border-y-transparent"

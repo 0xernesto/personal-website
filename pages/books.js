@@ -2,17 +2,17 @@ import React from "react";
 
 const Books = () => {
 	return (
-		<div className="flex flex-col items-center justify-start w-full flex-1">
-			<div className="flex flex-col items-center justify-center max-w-[1035px] w-11/12 h-fit">
-				<h1 className="text-3xl font-bold mb-5">Books</h1>
+		<div className="flex w-full flex-1 flex-col items-center justify-start py-10 px-4">
+			<div className="flex min-h-fit max-w-4xl w-full flex-col">
+				<h1 className="text-3xl font-bold mb-6">Books</h1>
 				<p className="self-start mb-5">
 					The following is a list of non-fiction books I've enjoyed
 					reading and recommend to my friends.
 				</p>
-				<ul className="self-start mb-5 list-disc ml-14">
-					<li className="pl-4 mb-5">
+				<ul className="self-start mb-5 list-disc ml-8">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/6fY7d7d"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -21,9 +21,9 @@ const Books = () => {
 						</a>{" "}
 						by by Eric Jorgenson and Tim Ferriss
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/0WfJl4K"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -32,9 +32,9 @@ const Books = () => {
 						</a>{" "}
 						by Ray Dalio
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/eOvxiDY"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -43,9 +43,9 @@ const Books = () => {
 						</a>{" "}
 						by Peter Thiel and Blake Masters
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/dPjNGoh"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -54,9 +54,20 @@ const Books = () => {
 						</a>{" "}
 						by Ashlee Vance
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
+							href="https://a.co/d/fzpOjQz"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Steve Jobs
+						</a>{" "}
+						by Walter Isaacson
+					</li>
+					<li className="pl-3 mb-5">
+						<a
+							className="hover:text-white"
 							href="https://a.co/d/4QInv8D"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -65,9 +76,9 @@ const Books = () => {
 						</a>{" "}
 						by Will and Ariel Durant
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/gaf2pRt"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -76,9 +87,9 @@ const Books = () => {
 						</a>{" "}
 						by Robert Greene
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/cVrMQ6G"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -87,9 +98,9 @@ const Books = () => {
 						</a>{" "}
 						by Plato
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/hKVdiXC"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -98,9 +109,9 @@ const Books = () => {
 						</a>{" "}
 						by Yuval Noah Harari
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/3QQF74p"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -109,9 +120,9 @@ const Books = () => {
 						</a>{" "}
 						by Yuval Noah Harari
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/dFmilNZ"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -120,9 +131,9 @@ const Books = () => {
 						</a>{" "}
 						by James Dale Davidson and William Rees-Mogg
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/b2tdbQL"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -131,9 +142,9 @@ const Books = () => {
 						</a>{" "}
 						by Richard P. Feynman
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/2fiJMxr"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -142,9 +153,9 @@ const Books = () => {
 						</a>{" "}
 						by Richard P. Feynman
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/8fsi6B0"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -153,9 +164,9 @@ const Books = () => {
 						</a>{" "}
 						by Nassim Nicholas Taleb
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/iCFw9qy"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -164,9 +175,9 @@ const Books = () => {
 						</a>{" "}
 						by Balaji Srinivasan
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/4JwQZHZ"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -175,9 +186,9 @@ const Books = () => {
 						</a>{" "}
 						by James Owen Weatherall
 					</li>
-					<li className="pl-4 mb-5">
+					<li className="pl-3 mb-5">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/iMdj2dP"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -186,9 +197,9 @@ const Books = () => {
 						</a>{" "}
 						by J. Storrs Hall
 					</li>
-					<li className="pl-4">
+					<li className="pl-3">
 						<a
-							className="underline underline-offset-2 hover:text-white"
+							className="hover:text-white"
 							href="https://a.co/d/iCbriTG"
 							target="_blank"
 							rel="noopener noreferrer"

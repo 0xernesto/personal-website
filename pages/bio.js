@@ -16,13 +16,10 @@ const Bio = ({ content }) => {
 	marked.setOptions({ renderer });
 
 	return (
-		<div className="flex flex-col items-center justify-start w-full flex-1">
-			<article className="flex flex-col items-center max-w-6xl px-2 prose prose-slate">
-				<h1 className="text-3xl font-bold">Bio</h1>
-				<div
-					className="max-w-[1035px] w-11/12"
-					dangerouslySetInnerHTML={{ __html: marked(content) }}
-				/>
+		<div className="flex w-full flex-1 flex-col items-center justify-start py-10 px-4">
+			<article className="flex min-h-fit max-w-4xl w-full flex-col prose prose-slate">
+				<h1 className="text-3xl font-bold mb-0">Bio</h1>
+				<div dangerouslySetInnerHTML={{ __html: marked(content) }} />
 			</article>
 		</div>
 	);

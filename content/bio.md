@@ -1,6 +1,6 @@
 Hi, I'm Ernesto. I like to work on projects that can enhance global living standards, boost economic freedom, address inefficiencies in societal systems, or mitigate existential threats.
 
-I'm currently spending a lot of time learning math, reading books, and building open-source projects. However, the ultimate goal is to found a successful [positive-sum](https://en.wiktionary.org/wiki/positive-sum) startup.
+I'm currently spending a lot of time learning, reading books, and building open-source projects. However, the ultimate goal is to found a successful [positive-sum](https://en.wiktionary.org/wiki/positive-sum) startup.
 
 Some of my recent work includes building [Ax Protocol](https://www.ax.finance), which powers the [USX](https://docs.ax.finance/overview/usx) cross-chain-native stablecoin, and cofounding [Pelleum](https://ernestor.xyz/projects/pelleum), a pseudonymous platform for reading, writing, and sharing investment content.
 
