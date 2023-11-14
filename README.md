@@ -1,6 +1,6 @@
-# My Personal Website
+# Personal Website
 
-Personal website built with Next.js and deployed to IPFS with fleek.co.
+Built with Next.js and deployed to IPFS with [fleek.co](https://fleek.co).
 
 ## Links:
 

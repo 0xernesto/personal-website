@@ -1,7 +1,10 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+
+const config = {
 	content: [
-		"./pages/**/*.{js, jsx, ts, tsx}",
-		"./components/**/*.{js, jsx, ts, tsx}",
+		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		screens: {
@@ -12,28 +15,36 @@ module.exports = {
 			xl: "1280px",
 		},
 		extend: {
-			typography: ({ theme }) => ({
-				slate: {
-					css: {
-						"--tw-prose-body": theme("colors.slate[300]"),
-						"--tw-prose-headings": theme("colors.slate[200]"),
-						"--tw-prose-links": theme("colors.slate[200]"),
-						"--tw-prose-bold": theme("colors.slate[200]"),
-						"--tw-prose-counters": theme("colors.slate[200]"),
-						"--tw-prose-bullets": theme("colors.slate[200]"),
-						"--tw-prose-hr": theme("colors.slate[200]"),
-						"--tw-prose-quotes": theme("colors.slate[200]"),
-						"--tw-prose-quote-borders": theme("colors.slate[200]"),
-						"--tw-prose-captions": theme("colors.slate[200]"),
-						"--tw-prose-code": theme("colors.slate[200]"),
-						"--tw-prose-pre-code": theme("colors.slate[200]"),
-						"--tw-prose-pre-bg": theme("colors.slate[200]"),
-						"--tw-prose-th-borders": theme("colors.slate[200]"),
-						"--tw-prose-td-borders": theme("colors.slate[200]"),
-					},
-				},
-			}),
+			colors: {
+				// ***** Dark ***** //
+				"dark-600": "#020617",
+				"dark-500": "#0f172a",
+				"dark-400": "#1e293b",
+				"dark-300": "#334155",
+				"dark-200": "#475569",
+				"dark-100": "#64748b",
+				// **************** //
+
+				// ***** Light ***** //
+				"light-500": "#94a3b8",
+				"light-400": "#cbd5e1",
+				"light-300": "#e2e8f0",
+				"light-200": "#f1f5f9",
+				"light-100": "#f8fafc",
+				// ***************** //
+
+				// ***** Primary ***** //
+				"primary-200": "#0d9488",
+				"primary-100": "#14b8a6",
+				// ******************* //
+
+				// ***** Accents ***** //
+				"bad-accent": "#cf0202",
+				"good-accent": "#4bd402",
+				// ******************* //
+			},
 		},
 	},
-	plugins: [require("@tailwindcss/typography")],
+	plugins: [],
 };
+export default config;
