@@ -1,26 +1,53 @@
 {
 	"name": "personal-website",
-	"version": "1.0.0",
-	"description": "Ernesto Ramirez Personal Website",
-	"main": "index.js",
+	"version": "0.1.0",
+	"author": "Ernesto Ramirez",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/0xernesto/personal-website.git"
+	},
 	"scripts": {
-		"dev": "next dev",
 		"build": "next build",
+		"dev": "next dev",
 		"export": "next export",
+		"format": "prettier --write .",
+		"format:check": "prettier --plugin=prettier-plugin-tailwindcss --check .",
+		"lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
 		"start": "next start"
 	},
 	"dependencies": {
-		"@headlessui/react": "^1.6.6",
-		"@tailwindcss/typography": "^0.5.4",
-		"autoprefixer": "^10.4.8",
+		"@headlessui/react": "^1.7.17",
 		"gray-matter": "^4.0.3",
-		"marked": "^4.0.18",
-		"next": "^12.2.0",
-		"postcss": "^8.4.14",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
+		"next": "14.0.2",
+		"next-pwa": "^5.6.0",
+		"react": "^18",
+		"react-dom": "^18",
 		"react-icons": "^4.11.0",
-		"tailwindcss": "^3.1.7",
-		"validator": "^13.7.0"
+		"react-markdown": "^9.0.1",
+		"rehype-raw": "^7.0.0",
+		"remark-gfm": "^4.0.0",
+		"validator": "^13.11.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@types/validator": "^13.11.6",
+		"@typescript-eslint/eslint-plugin": "^6.11.0",
+		"@typescript-eslint/parser": "^6.11.0",
+		"autoprefixer": "^10.0.1",
+		"eslint": "^8",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-prettier": "^5.0.1",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"postcss": "^8",
+		"prettier": "^3.1.0",
+		"prettier-plugin-tailwindcss": "^0.5.7",
+		"tailwindcss": "^3.3.0",
+		"typescript": "^5"
 	}
 }

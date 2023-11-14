@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -7,15 +7,17 @@
 		<style>
 			body {
 				font-family: "Courier New", Courier, monospace;
-				background-image: linear-gradient(#0e2734, #0e2734);
-				background-color: #0f172a;
-				color: #cbd5e1;
+				background-image: linear-gradient(
+					#1e293b,
+					#1e293b
+				); /* dark-400 */
+				background-color: #0f172a; /* dark-500 */
+				color: #e2e8f0; /* light-300 */
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				min-height: 100vh;
 				margin: 0;
-				padding: 2em 1px;
 				line-height: 1.5;
 				overflow: auto;
 			}
@@ -24,6 +26,7 @@
 				text-align: center;
 				min-width: 257px;
 				margin: 0 auto;
+				padding: 30px 1px;
 			}
 
 			.imageContainer {
@@ -47,12 +50,12 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				background-color: #0f172a;
+				background-color: #0f172a; /* dark-500 */
 				opacity: 90%;
 				padding: 0 30px;
 				font-size: 1em;
 				height: 60px;
-				width: 200px;
+				width: 140px;
 				border-radius: 10px;
 				text-decoration: none;
 				line-height: normal;
@@ -71,6 +74,7 @@
 			.connect-container a span {
 				flex-grow: 1;
 				text-align: center;
+				color: #f1f5f9; /* light-200 */
 			}
 
 			.icon {
@@ -86,7 +90,11 @@
 	<body>
 		<div class="connect-container">
 			<div class="imageContainer">
-				<img src="/images/ernestor-eth.png" alt="logo" />
+				<img
+					src="/images/ernestor-eth.png"
+					alt="ernestor-eth icon"
+					width="80px"
+				/>
 			</div>
 			<h1>Ernesto Ramirez</h1>
 			<a
