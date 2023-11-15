@@ -9,6 +9,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://ernestor.xyz"),
 	title: "Ernesto Ramirez",
 	description: "Personal Website",
 	keywords: [
@@ -71,6 +72,28 @@ export const metadata: Metadata = {
 				color: "#64748b", // dark-100
 			},
 		],
+	},
+	openGraph: {
+		title: "Ernesto Ramirez",
+		description: "Personal Website",
+		url: "https://ernestor.xyz",
+		type: "website",
+		images: [
+			{
+				url: "/card-image.png",
+			},
+		],
+	},
+	twitter: {
+		title: "Ernesto Ramirez",
+		description: "Personal Website",
+		card: "summary_large_image",
+		images: [
+			{
+				url: "/card-image.png",
+			},
+		],
+		site: "@ernestor_eth",
 	},
 };
 
