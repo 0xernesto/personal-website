@@ -12,6 +12,7 @@ const withPWA = require("next-pwa")({
 
 module.exports = withPWA({
 	reactStrictMode: true,
+	trailingSlash: true,
 	output: "export",
 	env: {
 		// ********* PRIVATE ********* //
