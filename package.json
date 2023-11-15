@@ -10,7 +10,6 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
-		"export": "next export",
 		"format": "prettier --write .",
 		"format:check": "prettier --plugin=prettier-plugin-tailwindcss --check .",
 		"lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -30,6 +29,7 @@
 		"validator": "^13.11.0"
 	},
 	"devDependencies": {
+		"@next/eslint-plugin-next": "^14.0.2",
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",

@@ -6,10 +6,12 @@ import remarkGfm from "remark-gfm";
 
 import { getProjectPostData, getProjectsData } from "../../../resources";
 
-export async function generateStaticParams(): Promise<string[]> {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
 	const posts = await getProjectsData();
 
-	return posts.map((post) => post.slug);
+	return posts.map((post) => ({
+		slug: post.slug,
+	}));
 }
 
 async function ProjectDetail({ params }: { params: { slug: string } }) {
