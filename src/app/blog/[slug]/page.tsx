@@ -6,10 +6,12 @@ import remarkGfm from "remark-gfm";
 
 import { getBlogData, getBlogPostData } from "../../../resources";
 
-export async function generateStaticParams(): Promise<string[]> {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
 	const posts = await getBlogData();
 
-	return posts.map((post) => post.slug);
+	return posts.map((post) => ({
+		slug: post.slug,
+	}));
 }
 
 async function BlogDetail({ params }: { params: { slug: string } }) {

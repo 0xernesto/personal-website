@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 
 const prod = process.env.NODE_ENV === "production";
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withPWA = require("next-pwa")({
 	dest: "public",
 	register: true,
@@ -12,15 +12,11 @@ const withPWA = require("next-pwa")({
 
 module.exports = withPWA({
 	reactStrictMode: true,
-	rewrites: async () => [
-		{
-			source: "/connect",
-			destination: "/connect.html",
-		},
-	],
+	output: "export",
 	env: {
 		// ********* PRIVATE ********* //
 		CONTACT_FORM_ENDPOINT: process.env.CONTACT_FORM_ENDPOINT,
+		TELEGRAM_URL: process.env.TELEGRAM_URL,
 
 		// ********* PUBLIC ********* //
 		GITBOOK_URL: "https://docs.ernestor.xyz",
