@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 
+import LinkRenderer from "../../../components/LinkRenderer";
 import { getBlogData, getBlogPostData } from "../../../resources";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -50,6 +51,7 @@ async function BlogDetail({ params }: { params: { slug: string } }) {
 					<ReactMarkdown
 						remarkPlugins={[remarkGfm]}
 						rehypePlugins={[rehypeRaw]}
+						components={{ a: LinkRenderer }}
 					>
 						{content}
 					</ReactMarkdown>

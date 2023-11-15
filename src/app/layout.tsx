@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 
-import type { Metadata } from "next";
-import { Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import React from "react";
 
 export const viewport: Viewport = {

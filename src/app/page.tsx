@@ -11,9 +11,7 @@ function Home() {
 			<div className="flex w-full flex-1 flex-col items-center justify-start px-4 py-10">
 				<div className="flex min-h-fit w-full max-w-4xl flex-col">
 					<h1 className="mb-6 text-3xl font-bold">Ernesto Ramirez</h1>
-					<p className="mb-5 self-start">
-						Hello! I love engineering and startups.
-					</p>
+					<p className="mb-5 self-start">Hello!</p>
 					<p className="mb-5 self-start">
 						I currently work in the{" "}
 						<a
