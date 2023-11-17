@@ -34,7 +34,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
 				<div className="mb-6 flex w-fit flex-col items-start justify-center">
 					{repo ? (
 						<p className="my-1">
-							GitHub Repo: {"  "}
+							Repo: {"  "}
 							<a
 								className="break-all underline underline-offset-4 hover:text-light-100"
 								href={repo}
@@ -47,7 +47,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
 					) : null}
 					{client ? (
 						<p className="my-1">
-							App: {"  "}
+							Client: {"  "}
 							<a
 								className="break-all underline underline-offset-4 hover:text-light-100"
 								href={client}
