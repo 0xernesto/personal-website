@@ -1,7 +1,7 @@
 ---
 slug: ax-protocol
 title: Ax Protocol
-description: An interoperability protocol powered by its own cross-chain native stablecoin, USX. The USX stablecoin is pegged to the US dollar and backed by Curve's 3Pool. The stablecoin is fungible across all supported chains, requires only gas fees for transfers, and is immune to slippage.
+description: An interoperability protocol powered by its own cross-chain native stablecoin, USX. The USX stablecoin is pegged to the US dollar and backed by Curve's 3Pool. The stablecoin is fungible across all supported chains, requires only gas fees for transfers, and is immune to slippage when transferring across chains.
 img: /images/project-ax-protocol.png
 repo: https://github.com/ax-protocol
 client: https://ax.finance
@@ -11,6 +11,10 @@ date: 27 October 2023
 **NOTE:** I contributed to this project using the [0xhashmap](https://github.com/0xhashmap) pseudonym due to regulatory uncertainty in the United States. However, I have decided to use my real name for building and communicating ideas moving forward.
 
 All the work described below was completed solely by me and another engineer.
+
+## Summary
+
+The Ax Protocol is an interoperability protocol powered by its own cross-chain native stablecoin, USX. The USX stablecoin is pegged to the US dollar and backed by Curve's 3Pool. The stablecoin is fungible across all supported chains, requires only gas fees for transfers, and is immune to slippage when transferring across chains.
 
 ## Official Docs
 
@@ -38,16 +42,7 @@ USX, LayerZeroBridge, and WormholeBridge were deployed to 9 different chains: Et
 
 ### USX
 
-The [USX](https://github.com/Ax-Protocol/usx-contracts/blob/main/src/token/USX.sol) contract adheres to the [ERC-20](https://eips.ethereum.org/EIPS/eip-20) standard and incorporates cross-chain messaging for seamless transfers between blockchains. The contract has all standard ERC-20 functions like **approve()**, **transfer()** and **balanceOf()**, along with **sendFrom()**, a specialized function that enables cross-chain transfers of USX. Transfers are executed by burning USX on the source chain and minting an equal amount on the destination chain. Minting and burning privileges on the USX contract are as follows:
-
--   USX:
-    -   \[✔]burn
--   Treasury:
-    -   \[✔]mint \[✔]burn
--   LayerZeroBridge:
-    -   \[✔]mint
--   WormholeBridge:
-    -   \[✔]mint
+The [USX](https://github.com/Ax-Protocol/usx-contracts/blob/main/src/token/USX.sol) contract adheres to the [ERC-20](https://eips.ethereum.org/EIPS/eip-20) standard and incorporates cross-chain messaging for seamless transfers between blockchains. The contract has all standard ERC-20 functions like **approve()**, **transfer()** and **balanceOf()**, along with **sendFrom()**, a specialized function that enables cross-chain transfers of USX. Transfers are executed by burning USX on the source chain and minting an equal amount on the destination chain.
 
 USX is designed to be bridge-agnostic, enabling the use of any message-passing protocol for cross-chain transfers. Although it makes sense to only use one message-passing protocol at a time to minimize attack vectors, the ability to switch between primary and backup bridges provides an additional layer of security. This bridge modularity also future-proofs USX, considering that better message-passing protocols may emerge in the future. [LayerZero](https://layerzero.network) and [Wormhole](https://wormhole.com) are the only message-passing protocols supported at the time of writing this. Supporting other protocols, like [Axelar](https://axelar.network), would require building a bridging contract that integrates with the Axelar network (e.g., AxelarBridge).
 
@@ -61,11 +56,28 @@ Conversely, users can exchange USX for DAI, USDC, USDT, or 3CRV through the Trea
 
 ### LayerZeroBridge
 
-The [LayerZeroBridge](https://github.com/Ax-Protocol/usx-contracts/blob/main/src/bridging/layer_zero/LayerZeroBridge.sol) contract is specifically designed to enable the USX contract to send and receive cross-chain messages via [LayerZero](https://layerzero.network). When the **sendFrom()** function in the USX contract is called, a cross-chain message is initiated. The LayerZeroBridge contract serves as a [User Application](https://layerzero.gitbook.io/docs/faq/glossary) in the LayerZero network, since it implements the logic to talk to [LayerZero Endpoints](https://layerzero.gitbook.io/docs/faq/layerzero-endpoint), which handle message transmissions. LayerZero runs their own [message relayer system](https://layerzero.gitbook.io/docs/ecosystem/relayer/develop-a-relayer) to handle message verification and delivery to destination chains.
+The [LayerZeroBridge](https://github.com/Ax-Protocol/usx-contracts/blob/main/src/bridging/layer_zero/LayerZeroBridge.sol) contract is specifically designed to enable the USX contract to send and receive cross-chain messages via [LayerZero](https://layerzero.network). The LayerZeroBridge contract serves as a [User Application](https://layerzero.gitbook.io/docs/faq/glossary) in the LayerZero network, since it implements the logic to talk to [LayerZero Endpoint](https://layerzero.gitbook.io/docs/faq/layerzero-endpoint) contracts, which handle message transmissions. LayerZero runs their own [message relaying system](https://layerzero.gitbook.io/docs/ecosystem/relayer/develop-a-relayer) to handle message verification and delivery to destination chains. When the **sendFrom()** function in the USX contract is called on the source chain, with the **\_bridgeAddress** parameter set to the LayerZeroBridge address, a cross-chain USX transfer is initiated via LayerZero. Below is the flow that is triggered by this function call.
 
-#### WormholeBridge
+1. The specified amount of USX is burnt for the sender on the source chain by calling the **burn()** function in the USX contract.
+2. The **sendMessage()** function is called on the source chain's LayerZeroBridge contract.
+3. The **send()** function is called on the source chain's [LayerZeroEndpoint](https://github.com/LayerZero-Labs/LayerZero/blob/main/contracts/Endpoint.sol) contract.
+4. A **SendToChain** event is emitted on the source chain.
+5. An off-chain LayerZero service verifies the message. Following this verification, this service calls the **validateTransactionProof()** function on the destination chain's [UltraLightNodeV2](https://github.com/LayerZero-Labs/LayerZero/blob/main/contracts/UltraLightNodeV2.sol) contract. This action triggers the **receivePayload()** function on the [LayerZeroEndpoint](https://github.com/LayerZero-Labs/LayerZero/blob/main/contracts/Endpoint.sol), which then calls the **lzReceive()** function on the destination chain's LayerZeroBridge contract.
+6. The recipient is minted the specified amount of USX on the destination chain by calling the **mint()** function on the USX contract.
+7. A **ReceiveFromChain** event is emitted on the destination chain.
 
-The [WormholeBridge](https://github.com/Ax-Protocol/usx-contracts/blob/main/src/bridging/wormhole/WormholeBridge.sol) contract is specifically designed to enable the USX contract to send and receive cross-chain messages via [Wormhole](https://wormhole.com). When the **sendFrom()** function in the USX contract is called, a cross-chain message is initiated. The WormholeBridge contract serves as an [Emitter (or xDapp)](https://docs.wormhole.com/wormhole/explore-wormhole/components#on-chain-components) in the Wormhole network, since it implements the logic to talk to [Wormhole Core Contracts](https://docs.wormhole.com/wormhole/explore-wormhole/core-contracts), which [Guardians (validator nodes)](https://docs.wormhole.com/wormhole/explore-wormhole/guardian) in the Wormhole network observe to validate messages. A [specialized off-chain relayer](https://docs.wormhole.com/wormhole/explore-wormhole/relayer#specialized-relayers) was built by the Ax Protocol team to listen for validated USX messages in the Wormhole network and deliver them to their respective destination chain.
+### WormholeBridge
+
+The [WormholeBridge](https://github.com/Ax-Protocol/usx-contracts/blob/main/src/bridging/wormhole/WormholeBridge.sol) contract is specifically designed to enable the USX contract to send and receive cross-chain messages via [Wormhole](https://wormhole.com). The WormholeBridge contract serves as an [Emitter (or xDapp)](https://docs.wormhole.com/wormhole/explore-wormhole/components#on-chain-components) contracts in the Wormhole network, since it implements the logic to talk to [Wormhole Core](https://docs.wormhole.com/wormhole/explore-wormhole/core-contracts) contracts, which [Guardians (validator nodes)](https://docs.wormhole.com/wormhole/explore-wormhole/guardian) in the Wormhole network observe to validate messages. A [specialized off-chain relayer](https://docs.wormhole.com/wormhole/explore-wormhole/relayer#specialized-relayers) was built by the Ax Protocol team to listen for validated USX messages in the Wormhole network and deliver them to their respective destination chain. When the **sendFrom()** function in the USX contract is called on the source chain, with the **\_bridgeAddress** parameter set to the WormholeBridge address, a cross-chain USX transfer is initiated via Wormhole. Below is the flow that is triggered by this function call.
+
+1. The specified amount of USX is burnt for the sender on the source chain by calling the **burn()** function on the USX contract.
+2. The **sendMessage()** function is called on the source chain's WormholeBridge contract.
+3. The **publishMessage()** function is called on the source chain's [WormholeCore](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/Implementation.sol) contract.
+4. A **SendToChain** event is emitted on the source chain.
+5. Guardians (validator nodes) in the Wormhole network validate the message off chain.
+6. The off-chain Wormhole message relaying system built by the Ax Protocol team picks up the verified message from the Wormhole network and delivers it by calling the **processMessage()** function on the destination chain's WormholeBridge contract.
+7. The recipient is minted the specified amount of USX on the destination chain by calling the **mint()** function on the USX contract.
+8. A **ReceiveFromChain** event is emitted on the destination chain.
 
 ## Off-Chain Backend Services
 
