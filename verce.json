@@ -1,0 +1,19 @@
+{
+	"redirects": [
+		{
+			"source": "/meet/30min",
+			"destination": "https://app.simplymeet.me/0xernesto/15min",
+			"permanent": true
+		},
+		{
+			"source": "/meet/15min",
+			"destination": "https://app.simplymeet.me/0xernesto/30min",
+			"permanent": true
+		},
+		{
+			"source": "/meet/60min",
+			"destination": "https://app.simplymeet.me/0xernesto/60min",
+			"permanent": true
+		}
+	]
+}
