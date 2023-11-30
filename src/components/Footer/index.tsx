@@ -24,14 +24,14 @@ function Footer() {
 			</a>
 			<a
 				className="flex h-12 w-12 flex-shrink-0 items-center justify-center p-[14px] hover:text-light-100"
-				href={process.env.WARPCAST_URL}
+				href={process.env.FARCASTER_URL}
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Warpcast Link"
 			>
 				<img
 					className="opacity-90 hover:opacity-100"
-					src="/images/iconFarcaster.svg"
+					src="/images/iconFarcasterWhite.svg"
 					alt="farcaster"
 				/>
 			</a>
