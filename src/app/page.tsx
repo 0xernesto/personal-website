@@ -13,17 +13,9 @@ function Home() {
 					<h1 className="mb-6 text-3xl font-bold">Ernesto Ramirez</h1>
 					<p className="mb-5 self-start">Hello!</p>
 					<p className="mb-5 self-start">
-						I currently work in the{" "}
-						<a
-							href="https://en.wikipedia.org/wiki/Decentralized_finance"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							DeFi
-						</a>{" "}
-						space, where I&apos;ve architected and built multiple
-						protocols from the ground up, across the entire tech
-						stack.
+						I currently work in the crypto space, where I&apos;ve
+						architected and built multiple protocols from the ground
+						up, across the entire tech stack.
 					</p>
 					<p className="mb-5 self-start">
 						Feel free to {"  "}
