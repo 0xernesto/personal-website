@@ -8,7 +8,7 @@ function CompactMenu() {
 		<Menu as="div" className="relative">
 			{({ open }) => (
 				<>
-					<Menu.Button className="flex h-9 w-9 items-center justify-center hover:text-light-100 focus:outline-none">
+					<Menu.Button className="flex h-9 w-9 items-center justify-center hover:text-primary-100 focus:outline-none">
 						<FiMenu size="25px" />
 					</Menu.Button>
 					<Transition
@@ -29,8 +29,8 @@ function CompactMenu() {
 									<Link
 										className={`border-y-2 px-2 py-1 no-underline ${
 											active
-												? "border-b-light-100` border-t-transparent text-light-100"
-												: "border-y-transparent text-[#cbd5e1]"
+												? "border-b-primary-100 border-t-transparent text-primary-100"
+												: "border-y-transparent"
 										}`}
 										href="/about"
 									>
@@ -43,8 +43,8 @@ function CompactMenu() {
 									<Link
 										className={`border-y-2 px-2 py-1 no-underline ${
 											active
-												? "border-b-light-100` border-t-transparent text-light-100"
-												: "border-y-transparent text-[#cbd5e1]"
+												? "border-b-primary-100 border-t-transparent text-primary-100"
+												: "border-y-transparent"
 										}`}
 										href="/blog"
 									>
@@ -57,8 +57,8 @@ function CompactMenu() {
 									<Link
 										className={`border-y-2 px-2 py-1 no-underline ${
 											active
-												? "border-b-light-100` border-t-transparent text-light-100"
-												: "border-y-transparent text-[#cbd5e1]"
+												? "border-b-primary-100 border-t-transparent text-primary-100"
+												: "border-y-transparent"
 										}`}
 										href="/projects"
 									>
@@ -71,8 +71,8 @@ function CompactMenu() {
 									<a
 										className={`border-y-2 px-2 py-1 no-underline ${
 											active
-												? "border-b-light-100` border-t-transparent text-light-100"
-												: "border-y-transparent text-[#cbd5e1]"
+												? "border-b-primary-100 border-t-transparent text-primary-100"
+												: "border-y-transparent"
 										}`}
 										href={process.env.GITBOOK_URL}
 										target="_blank"
@@ -87,8 +87,8 @@ function CompactMenu() {
 									<Link
 										className={`border-y-2 px-2 py-1 no-underline ${
 											active
-												? "border-b-light-100` border-t-transparent text-light-100"
-												: "border-y-transparent text-[#cbd5e1]"
+												? "border-b-primary-100 border-t-transparent text-primary-100"
+												: "border-y-transparent"
 										}`}
 										href="/books"
 									>
@@ -101,8 +101,8 @@ function CompactMenu() {
 									<Link
 										className={`border-y-2 px-2 py-1 no-underline ${
 											active
-												? "border-b-light-100` border-t-transparent text-light-100"
-												: "border-y-transparent text-[#cbd5e1]"
+												? "border-b-primary-100 border-t-transparent text-primary-100"
+												: "border-y-transparent"
 										}`}
 										href="/contact"
 									>

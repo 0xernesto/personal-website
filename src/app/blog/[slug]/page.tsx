@@ -37,7 +37,7 @@ async function BlogDetail({ params }: { params: { slug: string } }) {
 							Photo by
 							{"  "}
 							<a
-								className="underline underline-offset-4 hover:text-light-100"
+								className="underline underline-offset-4 hover:text-primary-100"
 								href={imgSource}
 								target="_blank"
 								rel="noopener noreferrer"

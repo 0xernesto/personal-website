@@ -36,7 +36,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
 						<p className="my-1">
 							Repo: {"  "}
 							<a
-								className="break-all underline underline-offset-4 hover:text-light-100"
+								className="break-all underline underline-offset-4 hover:text-primary-100"
 								href={repo}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -49,7 +49,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
 						<p className="my-1">
 							Client: {"  "}
 							<a
-								className="break-all underline underline-offset-4 hover:text-light-100"
+								className="break-all underline underline-offset-4 hover:text-primary-100"
 								href={client}
 								target="_blank"
 								rel="noopener noreferrer"

@@ -5,9 +5,8 @@
 /* ********* App Background, Font Style, and Font Color ********* */
 body {
 	font-family: "Courier New", Courier, monospace;
-	background-image: linear-gradient(#1e293b, #1e293b); /* dark-400 */
-	background-color: #0f172a; /* dark-500 */
-	color: #e2e8f0; /* light-300 */
+	background-color: #000000; /* dark-600 */
+	color: #d4d4d4; /* light-300 */
 }
 /* ************************************************************** */
 
@@ -69,7 +68,7 @@ body {
 
 .markdown-content a:hover,
 .markdown-content a:focus {
-	color: #f8fafc; /* light-100 */
+	color: #0d9488; /* primary-100 */
 	text-decoration: underline;
 	text-underline-offset: 0.25rem;
 }

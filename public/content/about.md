@@ -6,4 +6,4 @@ Some of my recent work includes developing [xSafe](https://ernestor.xyz/projects
 
 Previously I worked in the aerospace industry — first as a flight test engineer at [Textron Aviation](https://en.wikipedia.org/wiki/Textron_Aviation), then as a manufacturing operations engineer at [Woodward](https://en.wikipedia.org/wiki/Woodward,_Inc.).
 
-I hold a Bachelor of Science in Aerospace Engineering from Purdue University and I'm currently enrolled in a Master of Science in Computer Science at Georgia Tech.
+I hold a Bachelor of Science in Aerospace Engineering from Purdue University and I'm currently working on a Master of Science in Computer Science at Georgia Tech.

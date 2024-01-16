@@ -12,7 +12,7 @@ function Books() {
 				<ul className="mb-5 ml-8 list-disc self-start">
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/6fY7d7d"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -23,7 +23,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/0WfJl4K"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -34,7 +34,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/eOvxiDY"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -45,7 +45,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/dPjNGoh"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -56,7 +56,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/fzpOjQz"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -67,7 +67,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/4QInv8D"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -78,7 +78,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/gaf2pRt"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -89,7 +89,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/cVrMQ6G"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -100,7 +100,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/hKVdiXC"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -111,7 +111,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/3QQF74p"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -122,7 +122,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/dFmilNZ"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -133,7 +133,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/b2tdbQL"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -144,7 +144,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/2fiJMxr"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -155,7 +155,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/8fsi6B0"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -166,7 +166,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/iCFw9qy"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -177,7 +177,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/4JwQZHZ"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -188,7 +188,7 @@ function Books() {
 					</li>
 					<li className="mb-5 pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/iMdj2dP"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -199,7 +199,7 @@ function Books() {
 					</li>
 					<li className="pl-3">
 						<a
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="https://a.co/d/iCbriTG"
 							target="_blank"
 							rel="noopener noreferrer"

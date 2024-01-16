@@ -80,24 +80,20 @@ function Contact() {
 	return (
 		<div className="flex w-full flex-1 flex-col items-center justify-start px-4 py-10">
 			<div className="flex min-h-fit w-full max-w-4xl flex-col items-center">
-				<h1 className="mb-6 text-3xl font-bold">Contact</h1>
+				<h1 className="mb-3 text-3xl font-bold">Contact</h1>
 				<form
-					className="mb-5 flex max-w-2xl flex-col items-start justify-center rounded bg-slate-700 p-6 sm:w-11/12"
+					className="mb-5 flex max-w-2xl flex-col items-start justify-center p-3 sm:w-11/12"
 					onSubmit={onSubmit}
 				>
-					<h1 className="text-2xl font-bold">
-						Let&apos;s get in touch!
-					</h1>
 					<div className="relative mt-3 flex w-full items-center justify-end">
 						{firstName ? (
 							<GoCheck
-								className="pointer-events-none absolute mr-2"
-								color="white"
+								className="pointer-events-none absolute mr-2 text-primary-100"
 								size="25px"
 							/>
 						) : null}
 						<input
-							className="w-full rounded border border-slate-900 bg-slate-900 py-1 pl-2 pr-10 text-white outline-none focus:border-slate-300"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
 							type="text"
 							id="firstName"
 							name="firstName"
@@ -113,13 +109,12 @@ function Contact() {
 					<div className="relative mt-3 flex w-full items-center justify-end">
 						{lastName ? (
 							<GoCheck
-								className="pointer-events-none absolute mr-2"
-								color="white"
+								className="pointer-events-none absolute mr-2 text-primary-100"
 								size="25px"
 							/>
 						) : null}
 						<input
-							className="w-full rounded border border-slate-900 bg-slate-900 py-1 pl-2 pr-10 text-white outline-none focus:border-slate-300"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
 							type="text"
 							id="lastName"
 							name="lastName"
@@ -135,13 +130,12 @@ function Contact() {
 					<div className="relative mt-3 flex w-full items-center justify-end">
 						{email && isEmailValid ? (
 							<GoCheck
-								className="pointer-events-none absolute mr-2"
-								color="white"
+								className="pointer-events-none absolute mr-2 text-primary-100"
 								size="25px"
 							/>
 						) : null}
 						<input
-							className="w-full rounded border border-slate-900 bg-slate-900 py-1 pl-2 pr-10 text-white outline-none focus:border-slate-300"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
 							type="email"
 							id="email"
 							name="email"
@@ -155,13 +149,12 @@ function Contact() {
 					<div className="relative mt-3 flex w-full items-center justify-end">
 						{subject ? (
 							<GoCheck
-								className="pointer-events-none absolute mr-2"
-								color="white"
+								className="pointer-events-none absolute mr-2 text-primary-100"
 								size="25px"
 							/>
 						) : null}
 						<input
-							className="w-full rounded border border-slate-900 bg-slate-900 py-1 pl-2 pr-10 text-white outline-none focus:border-slate-300"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
 							type="text"
 							id="subject"
 							name="subject"
@@ -174,7 +167,7 @@ function Contact() {
 					</div>
 
 					<textarea
-						className="mt-3 min-h-[128px] w-full rounded border border-slate-900 bg-slate-900 px-2 py-1 text-white outline-none focus:border-slate-300"
+						className="mt-3 min-h-[128px] w-full rounded-sm bg-dark-600 px-2 py-1 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
 						id="message"
 						name="message"
 						placeholder="Message"
@@ -185,19 +178,19 @@ function Contact() {
 					/>
 					{error ? (
 						<div className="mt-3 flex w-full flex-col items-center justify-start">
-							<span className="font-bold text-red-400">
+							<span className="font-bold text-bad-accent">
 								ERROR
 							</span>
-							<span className="text-red-400">{error}</span>
+							<span className="text-bad-accent">{error}</span>
 						</div>
 					) : null}
 					{successMessage ? (
 						<div className="mt-3 flex w-full flex-col items-center justify-start">
-							<span className="my-5 text-green-400">
+							<span className="my-5 text-primary-100">
 								{successMessage}
 							</span>
 							<Link href="/">
-								<button className="mt-3 w-full rounded bg-slate-900 p-2 opacity-90 hover:opacity-100">
+								<button className="mt-3 w-full rounded-sm bg-dark-500 p-2 opacity-90 hover:text-primary-100 hover:opacity-100">
 									Go to Home Page
 								</button>
 							</Link>
@@ -212,8 +205,8 @@ function Contact() {
 								!subject ||
 								!message ||
 								loading
-									? "mt-6 w-full rounded bg-slate-900 p-2 opacity-70 hover:cursor-not-allowed"
-									: "mt-6 w-full rounded bg-slate-900 p-2 opacity-90 hover:opacity-100"
+									? "mt-6 w-36 self-center rounded-sm bg-dark-500 p-2 opacity-70 hover:cursor-not-allowed hover:text-primary-100"
+									: "mt-6 w-36 self-center rounded-sm bg-dark-500 p-2 opacity-90 hover:text-primary-100 hover:opacity-100"
 							}
 							disabled={
 								!!(

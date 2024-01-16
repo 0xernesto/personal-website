@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from "next";
 import React from "react";
 
 export const viewport: Viewport = {
-	themeColor: "#0f172a", // dark-500
+	themeColor: "#000000", // dark-600
 };
 
 export const metadata: Metadata = {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
 			{
 				rel: "mask-icon",
 				url: "/safari-pinned-tab.svg",
-				color: "#64748b", // dark-100
+				color: "#404040", // dark-100
 			},
 		],
 	},

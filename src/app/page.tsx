@@ -20,7 +20,7 @@ function Home() {
 					<p className="mb-5 self-start">
 						Feel free to {"  "}
 						<Link
-							className="underline underline-offset-4 hover:text-light-100"
+							className="underline underline-offset-4 hover:text-primary-100"
 							href="/contact"
 						>
 							reach out

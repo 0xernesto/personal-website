@@ -8,7 +8,7 @@ import DefaultMenu from "../DefaultMenu";
 
 function Header() {
 	return (
-		<header className="sticky top-0 z-10 flex w-full items-center justify-center bg-dark-500 px-4 py-2">
+		<header className="sticky top-0 z-10 flex w-full items-center justify-center bg-dark-600/20 px-4 py-2 backdrop-blur-sm">
 			<div className="flex w-full max-w-4xl items-center justify-between py-2">
 				<Link
 					className="flex shrink-0 items-center justify-center"
