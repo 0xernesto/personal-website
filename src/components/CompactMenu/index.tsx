@@ -32,13 +32,13 @@ function CompactMenu() {
 												? "border-b-primary-100 border-t-transparent text-primary-100"
 												: "border-y-transparent"
 										}`}
-										href="/about"
+										href="/"
 									>
 										About
 									</Link>
 								)}
 							</Menu.Item>
-							<Menu.Item>
+							{/* <Menu.Item>
 								{({ active }) => (
 									<Link
 										className={`border-y-2 px-2 py-1 no-underline ${
@@ -51,7 +51,7 @@ function CompactMenu() {
 										Blog
 									</Link>
 								)}
-							</Menu.Item>
+							</Menu.Item> */}
 							<Menu.Item>
 								{({ active }) => (
 									<Link

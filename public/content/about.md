@@ -1,6 +1,6 @@
 Hi, I'm Ernesto. I like to work on projects that can enhance global living standards, boost economic freedom, or address inefficiencies in societal systems.
 
-I'm currently spending a lot of time learning, reading books, and building open-source projects.
+I'm currently spending a lot of time learning, reading books, and building open-source projects in the crypto space.
 
 Some of my recent work includes developing [xSafe](https://ernestor.xyz/projects/xsafe), an intent-based smart contract deployer, building [Ax Protocol](https://ernestor.xyz/projects/ax-protocol), which powers the [USX](https://docs.ax.finance/overview/usx) cross-chain stablecoin, and co-founding [Pelleum](https://ernestor.xyz/projects/pelleum), a pseudonymous platform dedicated to reading, writing, and sharing investment content.
 

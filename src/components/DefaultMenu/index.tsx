@@ -6,16 +6,16 @@ function DefaultMenu() {
 		<>
 			<Link
 				className="border-y-2 border-transparent px-2 py-1 hover:border-b-primary-100 hover:text-primary-100"
-				href="/about"
+				href="/"
 			>
 				About
 			</Link>
-			<Link
+			{/* <Link
 				className="border-y-2 border-transparent px-2 py-1 hover:border-b-primary-100 hover:text-primary-100"
 				href="/blog"
 			>
 				Blog
-			</Link>
+			</Link> */}
 			<Link
 				className="border-y-2 border-transparent px-2 py-1 hover:border-b-primary-100 hover:text-primary-100"
 				href="/projects"
