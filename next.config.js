@@ -25,6 +25,6 @@ module.exports = withPWA({
 		LINKEDIN_URL: "https://www.linkedin.com/in/0xernesto",
 		TWITTER_URL: "https://twitter.com/ernestor_eth",
 		FARCASTER_URL: "https://warpcast.com/ernesto",
-		CALENDAR_URL: "https://app.simplymeet.me/0xernesto",
+		CALENDAR_URL: "https://cal.com/0xernesto",
 	},
 });
