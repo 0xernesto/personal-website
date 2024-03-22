@@ -93,7 +93,7 @@ function Contact() {
 							/>
 						) : null}
 						<input
-							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-1 ring-light-500 focus:ring-light-100"
 							type="text"
 							id="firstName"
 							name="firstName"
@@ -114,7 +114,7 @@ function Contact() {
 							/>
 						) : null}
 						<input
-							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-1 ring-light-500 focus:ring-light-100"
 							type="text"
 							id="lastName"
 							name="lastName"
@@ -135,7 +135,7 @@ function Contact() {
 							/>
 						) : null}
 						<input
-							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-1 ring-light-500 focus:ring-light-100"
 							type="email"
 							id="email"
 							name="email"
@@ -154,7 +154,7 @@ function Contact() {
 							/>
 						) : null}
 						<input
-							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
+							className="w-full rounded-sm bg-dark-600 py-1 pl-2 pr-10 outline-none ring-1 ring-light-500 focus:ring-light-100"
 							type="text"
 							id="subject"
 							name="subject"
@@ -167,7 +167,7 @@ function Contact() {
 					</div>
 
 					<textarea
-						className="mt-3 min-h-[128px] w-full rounded-sm bg-dark-600 px-2 py-1 outline-none ring-2 ring-dark-400 focus:ring-dark-200"
+						className="mt-3 min-h-[128px] w-full rounded-sm bg-dark-600 px-2 py-1 outline-none ring-1 ring-light-500 focus:ring-light-100"
 						id="message"
 						name="message"
 						placeholder="Message"
