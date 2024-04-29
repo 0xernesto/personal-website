@@ -68,7 +68,7 @@ body {
 
 .markdown-content a:hover,
 .markdown-content a:focus {
-	color: #0d9488; /* primary-100 */
+	color: #5a8ca3; /* primary-100 */
 	text-decoration: underline;
 	text-underline-offset: 0.25rem;
 }
