@@ -1,13 +1,7 @@
-Hi, I'm Ernesto. I like to work on projects that can enhance global living standards, boost economic freedom, or address inefficiencies in societal systems.
+Hi, I'm Ernesto. I'm an engineer interested in the intersection of AI and Web3. I'm currently based in the SF Bay Area, working on [Odos](https://odos.xyz) full time.
 
-I'm currently spending a lot of time learning and building open-source projects in the crypto space.
+I've been working on crypto projects since 2022. Some of my recent projects include: [Pesto](https://ernestor.xyz/projects/pesto), [xSafe](https://ernestor.xyz/projects/xsafe), and [Ax Protocol](https://ernestor.xyz/projects/ax-protocol). Previously I worked in the aerospace industry — first as a flight test engineer at [Textron Aviation](https://en.wikipedia.org/wiki/Textron_Aviation), then as a manufacturing operations engineer at [Woodward](https://en.wikipedia.org/wiki/Woodward,_Inc.).
 
-Some of my recent projects are:
+I hold a BS in Aerospace Engineering from Purdue University, and I'm enrolled as a graduate CS student at Georgia Tech, where I occasionally take classes.
 
--   [Pesto](https://ernestor.xyz/projects/pesto) - A DeFi protocol that enables users to create independent short and long positions in a single transaction.
--   [xSafe](https://ernestor.xyz/projects/xsafe) - A deterministic smart contract deployer.
--   [Ax Protocol](https://ernestor.xyz/projects/ax-protocol) - The interoperability protocol that powers the [USX](https://docs.ax.finance/overview/usx) cross-chain stablecoin.
-
-Previously I worked in the aerospace industry — first as a flight test engineer at [Textron Aviation](https://en.wikipedia.org/wiki/Textron_Aviation), then as a manufacturing operations engineer at [Woodward](https://en.wikipedia.org/wiki/Woodward,_Inc.).
-
-I hold a Bachelor of Science in Aerospace Engineering from Purdue University and I'm currently working on a Master of Science in Computer Science at Georgia Tech.
+I like to run, bike, and learn new things. [Reach out](https://ernestor.xyz/contact) if you want to chat or meet up.
