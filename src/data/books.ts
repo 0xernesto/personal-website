@@ -65,9 +65,9 @@ export const books = [
 		link: "https://a.co/d/2fiJMxr",
 	},
 	{
-		title: "Skin in the Game",
+		title: "Incerto series (5 books)",
 		author: "Nassim Nicholas Taleb",
-		link: "https://a.co/d/8fsi6B0",
+		link: "https://a.co/d/92SO3AV",
 	},
 	{
 		title: "The Network State",
