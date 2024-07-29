@@ -9,7 +9,7 @@ function ProjectBox({ post }: IPostBox) {
 			<Link href={`/projects/${post.slug}`}>
 				<div className="relative flex w-full justify-center overflow-hidden">
 					<img
-						className="rounded transition duration-300 ease-in-out hover:scale-105"
+						className="rounded grayscale filter transition duration-300 ease-in-out hover:scale-105 hover:grayscale-0"
 						src={post.frontmatter.img}
 						alt={post.frontmatter.img}
 					/>

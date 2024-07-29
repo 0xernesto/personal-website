@@ -4,7 +4,7 @@ title: Ax Protocol
 description: An interoperability protocol powered by its own cross-chain native stablecoin, USX. The USX stablecoin is pegged to the US dollar and backed by Curve's 3Pool. The stablecoin is fungible across all supported chains, requires only gas fees for transfers, and is immune to slippage when transferring across chains.
 img: /images/project-ax-protocol.png
 repo: https://github.com/ax-protocol
-# client: https://ax.finance
+client: https://docs.ax.finance
 date: 27 October 2023
 ---
 

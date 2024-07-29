@@ -81,6 +81,19 @@ function Contact() {
 		<div className="flex w-full flex-1 flex-col items-center justify-start px-4 py-10">
 			<div className="flex min-h-fit w-full max-w-4xl flex-col items-center">
 				<h1 className="mb-3 text-3xl font-bold">Contact</h1>
+				<h2>
+					Reach out if you want to chat or meet up. You can also DM me
+					on{" "}
+					<a
+						className="max-w-2xl px-3 underline underline-offset-4 hover:border-b-primary-100 hover:text-primary-100 sm:w-11/12"
+						href={process.env.TWITTER_URL}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						X
+					</a>
+					.
+				</h2>
 				<form
 					className="mb-5 flex max-w-2xl flex-col items-start justify-center p-3 sm:w-11/12"
 					onSubmit={onSubmit}

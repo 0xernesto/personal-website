@@ -34,7 +34,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
 				<div className="mb-6 flex w-fit flex-col items-start justify-center">
 					{repo ? (
 						<p className="my-1">
-							Repo: {"  "}
+							Code: {"  "}
 							<a
 								className="break-all underline underline-offset-4 hover:text-primary-100"
 								href={repo}
@@ -47,7 +47,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
 					) : null}
 					{client ? (
 						<p className="my-1">
-							Client: {"  "}
+							Website: {"  "}
 							<a
 								className="break-all underline underline-offset-4 hover:text-primary-100"
 								href={client}
